@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physics ulimate guide</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="home">
+  <section class="header">
+    <video autoplay loop muted plays-inline class=back-video>
+      <source src="images/background-video.mp4" type="video/mp4">
+    </video>
+    <nav>
+      <a href="index.html"><img src="images/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <span class="material-symbols-outlined" id="close" onclick="hideMenu()">close</span>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="booklet.html">Ultimate formula booklet</a></li>
+          <li><a href="recommended.html">Recommend resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <span class="material-symbols-outlined" id="menu" onclick="showMenu()">menu</span>
+    </nav>
+
+    <div class="text-box">
+      <h1>Welcome to PhysicsBuddy</h1>
+      <p>PhysicsBuddy: Ace Your Physics Yourney!</p>
+      <a href="#" class="hero-btn">Click here to learn more about me</a>
+    </div>
+  </section>
+
+  <div class="about">
+    <div class="container">
+      <div class="row2">
+        <div class="about-col-1">
+          <img src="images/aboutusimages.png" class="user">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About us</h1>
+          <p>Empowering IB Physics students worldwide with confidence and excellence, PhysicsBuddy envisions a dynamic
+            online platform where knowledge meets camaraderie. Our vision is to be the go-to companion, fostering a
+            supportive learning community where students thrive through personalized guidance, interactive resources,
+            and expert insights. With passion for physics at our core, we aspire to propel students beyond their
+            potential, equipping them to conquer the challenges of the IB Physics program and excel in their academic
+            journey.</p>
+          <div class=tab-titles>
+            <p class="tab-links active-link" onclick="opentab('andy')">Andy</p>
+            <p class=tab-links onclick="opentab('ben')">Ben</p>
+          </div>
+          <div class="tab-contents active-tab" id="andy">
+            <ul>
+              <li><span>DP1 Physics grade:</span><br>7</li>
+              <li><span>Email:</span><br>huy.b.huynh0724@ais.edu.vn</li>
+              <li><span>Facebook:</span><br>Andy Huynh</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="ben">
+            <ul>
+              <li><span>Email:</span><br>phyhoangxinh</li>
+              <li><span>Facebook:</span><br>Ben Xin</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <section class="contents">
+    <h1>What can we help?</h1>
+    <p>PhysicsBuddy: Ace Your Physics Yourney!</p>
+    <div class="row1">
+      <div class="content-col">
+        <i class="fa-regular fa-newspaper"></i>
+        <h3>
+          Ultimate Formula booklet
+        </h3>
+        <p>
+          This is a full annotated formula booklet,
+          containing notes that we find helpful. Feel free to share any recommendation!
+        </p>
+        <a href="booklet.html">Go to "Ultimate Formula Booklete"</a>
+      </div>
+      <div class="content-col">
+        <i class="fa-regular fa-thumbs-up"></i>
+        <h3>
+          Recommended resources
+        </h3>
+        <p>
+          This contains all the helpful resouces for revision/other websites to help you. Feel free to recommend us some
+          more!
+        </p>
+        <a href="recommended.html">Go to "Recommended resources"</a>
+      </div>
+      <div class="content-col">
+        <i class="fa-regular fa-comment"></i>
+        <h3>
+          Want to ask a question?
+        </h3>
+        <p>
+          "There's no such thing as a stupid question". We are always here to help you with hard problems, click the
+          link below to contact us!
+        </p>
+        <a href="contact.html">Go to "Contact"</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------footer------- -->
+  <section class="footer">
+    <div class="footerContainer">
+      <h4>PhysicsBuddy: Ace Your Physics Yourney!</h4>
+      <div class="footerNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="booklet.html">Ultimate formula booklet</a></li>
+          <li><a href="recommended.html">Recommend resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="icons">
+        <a href="https://www.facebook.com/profile.php?id=100094756256092"><i class="fa fa-brands fa-facebook"></i></a>
+        <a href="mailto:huy.b.huynh0724@ais.edu.vn"><i class="fa fa-solid fa-envelope"></i></a>
+      </div>
+      <div class="footerBottom">
+        <p>Copyright &copy;2023; Designed by <span class=Designer>Andy and Ben</span></p>
+      </div>
+    </div>
+  </section>
+<script src="script.js"></script>
+</body>
+
+</html>
