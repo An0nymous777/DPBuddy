@@ -6,6 +6,10 @@
   }
   
   
+  .midcol hr {
+    width: 100%
+  }
+
   
   hr {
     width: 70%;
@@ -530,12 +534,13 @@
   
   @media screen and (min-width: 1200px) { 
     .annotation {
-      font-size: 20px;
+      font-size: 18px;
     }
   
     .annotation span {
-      font-size: 20px;
-      max-width: 20vw;
+      font-size: 17px;
+      width: max-content;
+      padding: 2px 5px 5px 5px;
     }
   
     .annotation span::after {
@@ -632,3 +637,7 @@
       height: 100%;
     }
   }
+
+
+
+  

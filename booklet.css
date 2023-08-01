@@ -205,7 +205,7 @@ sup {
 } 
 
 .sidecolwork {
-    height: 28%;
+    height: 28.5%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -232,29 +232,30 @@ sup {
 }
 
 .annotation {
-    margin: auto 4px;
-    font-size: 1.7vw;
+    margin: auto 3px;
+    font-size: 1.6vw;
     position: relative;
+    word-break: break-word;
 }
 
 .annotation span{
+    word-break: break-word;
     line-height: 1.25;
     position: absolute;
     color: black;
-    text-align: left;
-    background: #E6E7E7;
+    background: #e6f9fa;
     border: black 3px solid;
-    width: max-content;
-    max-width: 20vw;
+    width: 138%;
     height: fit-content;
-    font-size: 1.7vw;
-    font-weight: 300;
+    font-size: 1.5vw;
+    font-weight: 500;
     top: -3px;
-    padding: 1px 8px 8px 8px;
+    padding: 1px 3px 3px 3px;
     visibility: hidden;
     opacity: 0;
     -webkit-transition: opacity 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;  
+    text-align: left;
 } 
 
 .col-left .annotation span{
@@ -270,7 +271,13 @@ sup {
 } 
 
 .annotation span b {
+    color: black;
+    font-weight: 600;
+}
+
+.annotation span #bullet {
     color: #F46C36;
+    font-weight: 600;
 }
 
 .annotation span::after {
@@ -298,3 +305,77 @@ sup {
     transform: translateX(0);
 }
 
+/* --------------------unit 3 and 4---------------------- */
+#spacethermal {
+    height: 10%;
+}
+.sidecolthermal {
+    height: 19%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkred;
+    border: 1px black solid;
+}
+
+#spaceoscillation {
+    height: 2.5%;
+}
+.sidecoloscillation {
+    height: 7%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkblue;
+    border: 1px black solid;
+}
+
+.sidecoltravellingwaves {
+    height: 7.5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkblue;
+    border: 1px black solid;
+}
+
+.sidecolcharacteristics {
+    height: 19%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkblue;
+    border: 1px black solid;
+}
+
+
+#spacegas {
+    height: 1.7%;
+}
+.sidecolgas {
+    height: 31.5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkblue;
+    border: 1px black solid;
+}
+
+#spacebehaviour {
+    height: 1.2%;
+}
+.sidecolbehaviour {
+    height: 31.5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkblue;
+    border: 1px black solid;
+}
+ 
