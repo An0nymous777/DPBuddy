@@ -1,0 +1,381 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;  
+    margin: 0;
+    padding: 0;
+}
+
+.starter{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.control {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.starter p{
+    color: red;
+    position: relative;
+    margin-right: 10px;
+}
+
+.control p{
+    color: black;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 34px;
+   }
+   
+   .switch input {
+    display: none;
+   }
+   
+switch input{
+    font-size: 20px;
+   }
+
+   .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3C3C3C;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+   }
+   
+   .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #C3FCF1;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+   }
+   
+   input:checked + .slider {
+    background-color: #F46C36;
+   }
+   
+   input:focus + .slider {
+    box-shadow: 0 0 1px #F46C36;
+   }
+   
+   input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(85px);
+   }
+   
+   .slider:after {
+    content: 'DISABLED';
+    color: white;
+    display: block;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    font-size: 10px;
+    font-family: Verdana, sans-serif;
+   }
+   
+   input:checked + .slider:after {
+    content: 'ENABLED';
+   }
+   
+
+
+
+
+/* ----------------------------------------------------------------- */
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+
+.sub-header{
+    height: 40vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,1), rgba(4,9,30,1)),url(images/10446513.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    text-align: center;
+    color: #C3FCF1;
+}
+
+.sub-header h1{
+    margin-top: 50px;
+    font-size: 40px;
+    color: #F46C36;
+}
+
+
+
+.formula-container {
+    background-color: white;
+    display: flex;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.col-left {
+    flex-basis: 15.5%;
+    text-align: right;
+    background-color: white;
+}
+
+.col-right {
+    flex-basis: 15.5%;
+    text-align: left;
+    background-color: white;
+}
+
+.midcol {
+    flex-basis: 69%;
+    max-width: 900px;
+}
+
+.midcol img {
+    width: 100%;
+}
+
+#spaceoneunitone {
+    height: 29%;
+}
+
+#spacetwounitonetwo {
+    height: 11.5%;
+}
+
+#leftonethree{
+    height: 2%;
+}
+
+#rightoneone {
+    height:45%;
+}
+
+#rightonetwo {
+    height:4.5%;
+}
+
+.sidecolerror {
+    width: 100%;
+    height: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkblue;
+    border: black 1px;
+}
+
+.sidecolmotion {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkred;
+} 
+
+.sidecolwork {
+    height: 28.5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkgreen;
+}
+
+.sidecolforces {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkblue
+}
+
+.sidecolmom {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkred;
+}
+
+.annotation {
+    margin: auto 3px;
+    font-size: 1.6vw;
+    position: relative;
+    word-break: break-word;
+}
+
+.annotation span{
+    word-break: break-word;
+    line-height: 1.25;
+    position: absolute;
+    color: black;
+    background: #e6f9fa;
+    border: black 3px solid;
+    width: 138%;
+    height: fit-content;
+    font-size: 1.5vw;
+    font-weight: 500;
+    top: -3px;
+    padding: 1px 3px 3px 3px;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;  
+    text-align: left;
+} 
+
+.col-left .annotation span{
+    left: 100%;
+    margin-left: 8px;
+    transform: translateX(-20px);
+}
+
+.col-right .annotation span{
+    right: 100%;
+    margin-right: 8px;
+    transform: translateX(20px);
+} 
+
+.annotation span b {
+    color: black;
+    font-weight: 600;
+}
+
+.annotation span #bullet {
+    color: #F46C36;
+    font-weight: 600;
+}
+
+.annotation span::after {
+    content: "";
+    position: absolute;
+    margin-top: -5px;
+    border-width: 9px;
+    border-style: solid;
+    top: 0.7vw;
+}
+
+.col-left .annotation span::after{
+    right:100%;
+    border-color: transparent black transparent transparent;
+}
+
+.col-right .annotation span::after {
+    left: 100%; 
+    border-color: transparent transparent transparent black;
+}
+
+.annotation:hover span{
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* --------------------unit 3 and 4---------------------- */
+#spacethermal {
+    height: 10%;
+}
+.sidecolthermal {
+    height: 19%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkred;
+    border: 1px black solid;
+}
+
+#spaceoscillation {
+    height: 2.5%;
+}
+.sidecoloscillation {
+    height: 7%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkblue;
+    border: 1px black solid;
+}
+
+.sidecoltravellingwaves {
+    height: 7.5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkblue;
+    border: 1px black solid;
+}
+
+.sidecolcharacteristics {
+    height: 19%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkblue;
+    border: 1px black solid;
+}
+
+
+#spacegas {
+    height: 1.7%;
+}
+.sidecolgas {
+    height: 31.5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkblue;
+    border: 1px black solid;
+}
+
+#spacebehaviour {
+    height: 1.2%;
+}
+.sidecolbehaviour {
+    height: 31.5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkblue;
+    border: 1px black solid;
+}
+ 
