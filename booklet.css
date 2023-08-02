@@ -238,6 +238,11 @@ sup {
     word-break: break-word;
 }
 
+.annotation img{
+    width: 350px;
+    margin-top: 10px;
+}
+
 .annotation span{
     word-break: break-word;
     line-height: 1.25;
