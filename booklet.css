@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+img.optional{
+    width: 100%;
+}
+
 .starter{
     display: block;
     width: 100%;
@@ -233,7 +237,7 @@ sup {
 
 .annotation {
     margin: auto 3px;
-    font-size: 1.6vw;
+    font-size: 1.5vw;
     position: relative;
     word-break: break-word;
 }
@@ -321,7 +325,7 @@ sup {
     flex-direction: column;
     justify-content: center;
     color: darkred;
-    border: 1px black solid;
+    
 }
 
 #spaceoscillation {
@@ -334,7 +338,7 @@ sup {
     flex-direction: column;
     justify-content: center;
     color: darkblue;
-    border: 1px black solid;
+    
 }
 
 .sidecoltravellingwaves {
@@ -343,8 +347,8 @@ sup {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: darkblue;
-    border: 1px black solid;
+    color: darkgreen;
+    
 }
 
 .sidecolcharacteristics {
@@ -353,8 +357,8 @@ sup {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: darkblue;
-    border: 1px black solid;
+    color: darkmagenta;
+    
 }
 
 
@@ -368,7 +372,7 @@ sup {
     flex-direction: column;
     justify-content: center;
     color: darkblue;
-    border: 1px black solid;
+    
 }
 
 #spacebehaviour {
@@ -380,7 +384,325 @@ sup {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: darkblue;
-    border: 1px black solid;
+    color: darkred;
+    
 }
- 
+
+/* -----------------------unit 5 and 6----------------------------- */
+#spaceelecfield{
+    height: 3.7%;
+}
+.sidecolElecfield{
+    height: 41%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkblue;
+    
+}
+
+#spaceEleccells{
+    height: 1.3%;
+}
+.sidecolEleccells{
+    height: 9.5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkred;
+    
+}
+
+#spaceCircularmotion{
+    height: 2.1%;
+}
+.sidecolCircularmotion{
+    height: 18.4%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkgreen;
+    
+}
+
+#spaceEleccurrent{
+    height: 12.3%;
+}
+.sidecolEleccurrent{
+    height: 17%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkred;
+    
+}
+
+#spaceMageffect{
+    height: 12.1%;
+}
+.sidecolMageffect{
+    height: 13.4%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkblue;
+    
+}
+
+#spaceLawofgravitation{
+    height: 2.3%;
+}
+.sidecolLawofgravitation{
+    height: 19.5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkgreen;
+    
+}
+
+/* ----------------------------unit 7 and 8--------------------- */
+#spaceradioactivity{
+    height: 10.4%;
+}
+.sidecolradioactivity{
+    height: 11.7%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkblue;
+    
+}
+
+#spacematter{
+    height: 5.2%;
+}
+.sidecolmatter{
+    height: 18.3%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkred;
+    
+}
+
+#spaceEnergysources{
+    height: 18.6%;
+}
+.sidecolEnergysources{
+    height: 7.9%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkgreen;
+    
+}
+
+#spacereactions{
+    height: 11.5%;
+}
+.sidecolreactions{
+    height: 6.6%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkred;
+    
+}
+
+#spacelleptons{
+    height: 9.5%;
+}
+.sidecolleptons{
+    height: 9%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkgreen;
+    
+}
+
+#spaceEnergytransfer{
+    height: 26%;
+}
+.sidecolEnergytransfer{
+    height: 18.1%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkblue;
+    
+}
+
+/* --------------------unit 9--------------------- */
+#spaceshm{
+    height: 18.3%;
+}
+.sidecolshm{
+    height: 34%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkgreen;
+    
+}
+
+#spaceResolution{
+    height: 7.1%;
+}
+.sidecolResolution{
+    height: 24.6%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkblue;
+    
+}
+
+#spacediffraction{
+    height: 16.9%;
+}
+.sidecoldiffraction{
+    height: 6.6%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkred;
+    
+}
+
+#spaceInterference{
+    height: 3.8%;
+}
+.sidecolInterference{
+    height: 24%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkblue;
+    
+}
+
+#spaceDopplereffect{
+    height: 7.3%;   
+}
+.sidecolDopplereffect{
+    height: 24.8%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkgreen;
+    
+}
+
+/* -------------------unit 10--------------- */
+#spaceFields{
+    height: 13.2%;
+}
+.sidecolFields{
+    height: 15.6%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkblue;
+    
+}
+
+#spaceFieldsatwork{
+    height: 6.5%;
+}
+.sidecolFieldsatwork{
+    height: 54.7%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkblue;
+    
+}
+
+
+/* -------------------unit 11 and 12------------------- */
+#spaceInduction{
+    height: 9.6%;
+}
+.sidecolInduction{
+    height: 18.4%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkblue;
+    
+}
+
+#spacetransmission{
+    height: 1.9%;
+}
+.sidecoltransmission{
+    height: 28.8%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkred;
+    
+}
+
+#spacewithradiation{
+    height: 1.9%;
+}
+.sidecolwithradiation{
+    height: 32.5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkgreen;
+    
+}
+
+#spaceCapacitance{
+    height: 11.2%;
+}
+.sidecolCapacitance{
+    height: 42%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkblue;
+    
+}
+
+#spaceNuclearphysics{
+    height: 6%;
+}
+.sidecolNuclearphysics{
+    height: 34%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: darkred;
+    
+}
+
