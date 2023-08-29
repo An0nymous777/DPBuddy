@@ -605,6 +605,9 @@
   }
   
   @media(max-width: 800px) {
+    .text-box h1{
+        font-size: 29px;
+    }
     .footerNav {
       width: 60%;
     }
