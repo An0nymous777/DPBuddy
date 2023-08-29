@@ -19,7 +19,7 @@
   
   
   .material-symbols-outlined {
-    font-variation-settings:
+    font-variation-settings:d
       'FILL' 0,
       'wght' 600,
       'GRAD' 0,
@@ -45,7 +45,7 @@
     bottom: 0;
     z-index: -1;
   }
-  
+
   nav {
     display: flex;
     padding: 35px 0% 6% 6%;
@@ -185,6 +185,7 @@
     padding: 20px 12px;
     box-sizing: border-box;
     transition: 0.5s;
+    position: relative;
   }
   
   h3 {
@@ -320,6 +321,7 @@
   /* --------------footer-------------- */
   .footer {
     width: 100%;
+    position: relative;
     background: #00818F;
   }
   
@@ -330,6 +332,7 @@
   .icons {
     display: flex;
     justify-content: center;
+    position: relative;
   }
   
   .icons a {
@@ -362,6 +365,7 @@
     background-color: #f36e39;
     width: 70%;
     border-radius: 10px;
+    position: relative;
   }
   
   .footerNav ul {
@@ -379,7 +383,6 @@
   .footerNav ul li a {
     text-decoration: none;
     color: black;
-    margin: 20px;
     font-size: 16px;
     font-weight: 600;
     transition: 0.5s;
@@ -524,6 +527,15 @@
     margin-bottom: 20px;
   
   }
+
+  .visitorcounter {
+    position: absolute;
+    width: fit-content;
+    overflow: hidden;
+    bottom: 3px;
+    right:8px;
+  }
+
   
   @media screen and (min-width: 1600px) {
   
@@ -606,10 +618,11 @@
   
   @media(max-width: 800px) {
     .text-box h1{
-        font-size: 32px;
+      font-size: 32px;
     }
+
     .footerNav {
-      width: 60%;
+      width: 75%;
     }
   
     .footerNav ul {
