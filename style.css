@@ -638,6 +638,9 @@
     .row1 {
       flex-direction: column;
     }
+    .annotation span{
+      max-width: 250px;
+    }
   }
   
   @media(min-aspect-ratio: 16/9) {
