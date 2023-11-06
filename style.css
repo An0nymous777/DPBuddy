@@ -477,6 +477,7 @@
     text-transform: capitalize;
     transition: 0.2s linear;
   }
+
   
   .resources .container {
     padding:15px 9%;
@@ -569,7 +570,7 @@
     }
   }
   
-  @media(max-width: 1050px) {
+  @media(max-width: 1250px) {
   
     .about-col-1,
     .about-col-2 {
@@ -616,7 +617,7 @@
     }
   }
   
-  @media(max-width: 800px) {
+  @media(max-width: 1050px) {
     .text-box h1{
       font-size: 32px;
     }
@@ -659,4 +660,38 @@
 
 
 
-  
+.footerBottom a{
+  color: #F46C36;
+}
+
+/* ------------study gudie ------------ */
+.studyguide {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.studyguide .pdf{
+  width: 95%;
+  height: 80vh;
+  margin-top: 50px;
+}
+
+.studyguide a{
+  font-size: 20px;
+  text-align: center;
+  color: #F46C36;
+  font-weight: 600;
+  padding: 15px 20px 15px 20px;
+  background-color: #C3FCF1;
+  border-radius: 10px;
+}
+
+.studyguide a:hover{
+  background-color: #F46C36;
+  color:#C3FCF1;
+  transition: 0.5s all;
+}
