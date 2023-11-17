@@ -57,13 +57,37 @@
         </div>
       </div>
       <div class="contact-col">
-        <form action="https://formspree.io/f/xdorkyeb" method="POST" onsubmit="reset()" >
-          <input type="text" id="name" name="name" placeholder="Enter your name" required>
-          <input type="email" id="email" name="email" placeholder="Enter email address" required>
-          <input type="text" id="subject" name="subject" placeholder="Enter your subject" required>
-          <textarea rows="8" id="message" name="message" placeholder="Message" required></textarea>
+        <form
+          action="https://formspree.io/f/myyqadld"
+          method="POST"
+          onsubmit="reset()" 
+        >
+          <label>
+            Your email:
+            <input type="email" name="email">
+          </label>
+          <label>
+            Your message:
+            <textarea name="message"></textarea>
+          </label>
+          <label class="term">
+            <input type="checkbox" name="I agree not to copy, plagiarize, or present the provided content as my own work. These resources are for reference only, and I commit to creating original content for my assessments. 
+            *Academic integrity is vital; using these examples solely for learning purposes is expected. Any misuse of these materials will not be tolerated, and we reserve the right to restrict access to our service. Your use of the platform indicates your acceptance of these terms." required>
+            <p name="term-description"><u>I agree</u> not to copy, plagiarize, or present the provided content as my own work. These resources are for reference only, and I commit to creating original content for my assessments. 
+            <span>*Academic integrity is vital; using these examples solely for learning purposes is expected. Any misuse of these materials will not be tolerated, and we reserve the right to restrict access to our service. Your use of the platform indicates your acceptance of these terms.</span>
+            </p>
+          </label>
+          
+          <!-- your other form fields go here -->
           <button type="submit" class="red-btn">Send</button>
         </form>
+        <!-- <form action="https://formspree.io/f/myyqadld" method="POST" onsubmit="reset()" >
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          <input type="email" id="email" name="email" placeholder="Enter email address" required>
+          <input type="url" id="" name="Clastify link" placeholder="Copy and paste the clastify url (link)" required>
+          <textarea rows="8" id="message" name="message" placeholder="Enter Classtify link" required></textarea>
+          <button type="submit" class="red-btn">Send</button>
+        </form> -->
       </div>
     </div>
   </section>
