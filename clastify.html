@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recommended Resources</title>
+  <title>Contact</title>
   <link href="booklet.css" rel="stylesheet" type="text/css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,18 +35,64 @@
       </div>
       <span class="material-symbols-outlined" id="menu" onclick="showMenu()">menu</span>
     </nav>
-    <h1>Study guides</h1>
+    <h1>Free Premium Clastify</h1>
   </section>
- <!-- ------------------resources----------------- -->
-<section class="resources">
-  <div class="container">
-    <div class="studyguide">
-        <a href = "https://drive.google.com/drive/folders/1eZoZNY9EO9z7iLJet2zENFsq0Fevah5P?fbclid=IwAR1ojnnqMVQM2ifjtPHXnPiaBnq13WNnem0D_zGNB_8g4Zt-zDhJF2VxQ_M">Topic slides and past practices/formative/summative papers</a>
-        <embed class="pdf" src="Physics-Study-Guide-Tim-Kirk-Oxford-2014-1.pdf" type="application/pdf">
+  <!-- ----------------------Ask a question?----------------------------------- -->
+  <section class="contact-us" id="contact-us">
+    <div class="row1">
+      <div class="contact-col">
+        <div>
+          <i class="fa fa-solid fa-envelope"></i>
+          <span>
+            <h5>huy.b.huynh0724@ais.eud.vn</h5>
+            <p>Ask us any question</p>
+          </span>
+        </div>
+      </div>
+      <div class="contact-col">
+        <h3 id="clastifyTitle">Get free premium clastify here</h3>
+        <form
+          action="https://formspree.io/f/myyqadld"
+          method="POST"
+          id="clastify" 
+        >
+          <label>
+            Your email:
+            <input type="email" id="email" name="email" placeholder="Please enter the email address that you want the file to be sent to" required>
+          </label>
+          <label>
+            Copy and paste the clastify url (link):
+            <input type="url" id="url" name="Clastify link" placeholder="e.g. https://www.clastify.com/ia/{subject}/{id}" required>
+          </label>
+          <label class="term">
+            <input type="checkbox" name="I agree not to copy, plagiarize, or present the provided content as my own work. These resources are for reference only, and I commit to creating original content for my assessments. 
+            *Academic integrity is vital; using these examples solely for learning purposes is expected. Any misuse of these materials will not be tolerated, and we reserve the right to restrict access to our service. Your use of the platform indicates your acceptance of these terms." required>
+            <p name="term-description"><u>I agree</u> not to copy, plagiarize, or present the provided content as my own work. These resources are for reference only, and I commit to creating original content for my assessments. 
+            <span>*Academic integrity is vital; using these examples solely for learning purposes is expected. Any misuse of these materials will not be tolerated, and we reserve the right to restrict access to our service. Your use of the platform indicates your acceptance of these terms.</span>
+            </p>
+          </label>
+          
+          <!-- your other form fields go here -->
+          <button type="button" class="red-btn" onclick="resetForm()">Next</button>
+        </form>
+        <!-- <form action="https://formspree.io/f/myyqadld" method="POST" onsubmit="reset()" >
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          <input type="email" id="email" name="email" placeholder="Enter email address" required>
+          <input type="url" id="" name="Clastify link" placeholder="Copy and paste the clastify url (link)" required>
+          <textarea rows="8" id="message" name="message" placeholder="Enter Classtify link" required></textarea>
+          <button type="submit" class="red-btn">Send</button>
+        </form> -->
+      </div>
     </div>
-  </div>
-</section>
-  
+  </section>
+  <section class="thankyouSection" id="thankyouSection">
+    <div class="thankyou">
+        <h1>Thank you!</h1>
+        <p>I will send you the file soon. If you don't receive it in 24 hours, please send me a message to huy.b.huynh0724@ais.edu.vn. Please click "Confirm and send" to send the form. Thank you!</p>
+        <button type="button" class="red-btn" onclick="submitForm()">Confirm and Send</button>
+        <button type="button" class="red-btn" onclick="goback()">Go back</button>
+    </div>
+  </section>
   <!-- ---------footer------- -->
   <section class="footer">
     <div class="footerContainer">
@@ -73,6 +119,7 @@
       </div> -->
     </div>
   </section>
+
 <script src="script.js"></script>
 
 <!-- Messenger Chat Plugin Code -->
@@ -105,7 +152,6 @@
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
 </script>
-
 </body>
 
 </html>

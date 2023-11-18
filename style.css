@@ -53,6 +53,36 @@
     align-items: center;
   }
   
+  .drop-down li{
+    list-style: none;
+    height: 100%;
+    padding: 4rem 1rem;
+    margin-bottom: 10px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .drop-down {
+    position: absolute;
+    left: 22%;
+    padding: 0.5rem 2rem;
+    margin: 0.5rem -0.5rem;
+    background: #f36e39;
+    color: white;
+    box-shadow: 0 4ps 12px rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+    font-size: 12px;
+    display: none;
+  }
+
+  .booklet:hover .drop-down {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  } 
+
   nav img {
     width: 100px;
     position: absolute;
@@ -695,3 +725,47 @@
   color:#C3FCF1;
   transition: 0.5s all;
 }
+
+.term {
+  display: flex;
+  flex-direction: row;
+}
+
+.term input{
+  width: 100px;
+  margin-right: 20px;
+}
+
+.term p{
+  margin-bottom: 20px;
+}
+
+.term span {
+  color: red;
+}
+
+.contact-col h3{
+  font-size: 40px;
+}
+
+.thankyou {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  text-align: center;
+}
+
+.thankyou p{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.thankyouSection{
+  display: none;
+}
+
+.nav-links ul span {
+  color: #F9F871;
+}
+
