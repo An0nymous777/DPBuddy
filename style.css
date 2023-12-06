@@ -616,12 +616,10 @@
     display: inline-block;
   }
 
-  .visitorcounter {
-    position: absolute;
-    width: fit-content;
-    overflow: hidden;
-    bottom: 3px;
-    left:6px;
+  @media(max-width: 375px) {
+    .pastpaper .container .box-container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
   }
 
   .long{
