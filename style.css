@@ -620,6 +620,15 @@
     .pastpaper .container .box-container {
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
+    .resources .container .box-container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+
+  @media(max-width: 500px) {
+    .resources .container .box-container {
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
   }
 
   .long{
