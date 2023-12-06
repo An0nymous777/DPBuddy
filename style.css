@@ -507,7 +507,6 @@
     text-transform: capitalize;
     transition: 0.2s linear;
   }
-
   
   .resources .container {
     padding:15px 9%;
@@ -533,8 +532,9 @@
     border-radius: 5px;
     background: white;
     text-align:center;
-    padding: 30px 20px;
+    padding: 10px 10px;
   }
+
   
   .resources .container .box-container .box embed, .resources .container .box-container .box iframe{
     width: 90%
@@ -557,6 +557,63 @@
     display: inline-block;
     margin-bottom: 20px;
   
+  }
+
+  .visitorcounter {
+    position: absolute;
+    width: fit-content;
+    overflow: hidden;
+    bottom: 3px;
+    left:6px;
+  }
+
+  .pastpaper .container {
+    padding:15px 9%;
+    padding-bottom: 100px;
+  }
+  
+  .pastpaper .container .heading {
+    text-align: center;
+    padding-bottom: 15px;
+    color: orange;
+    text-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    font-size: 50;
+  }
+  
+  .pastpaper .container .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 15px;
+  }
+  
+  .pastpaper .container .box-container .box {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    background: white;
+    text-align:center;
+    padding: 10px 10px;
+  }
+
+  
+  .pastpaper .container .box-container .box embed, .pastpaper .container .box-container .box iframe{
+    width: 90%
+  }
+  
+  .pastpaper .container .box-container h3{
+    font-size: 22px;
+    padding: 10px 0;
+  }
+  
+  .pastpaper .container .box-container{
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  
+  .pastpaper .container .box-container .box .btn {
+    color: #F46C36;
+    font-size: 17px;
+    margin-top: 10px;
+    display: inline-block;
   }
 
   .visitorcounter {
@@ -790,14 +847,14 @@
   }
 }
 
-/* pastpaper */
+/* other */
 
-.pastpaper .container{
+.other .container{
   padding: 15px 9%;
   padding-bottom: 100px;
 }
 
-.pastpaper .container .heading{
+.other .container .heading{
   text-align: center;
   padding-bottom: 15px;
   color: #f36e39;
@@ -806,13 +863,13 @@
   margin-bottom: 10px;
 }
 
-.pastpaper .container .box-container{
+.other .container .box-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(370px, 2fr));
   gap: 50px;
 }
 
-.pastpaper .container .box-container .box {
+.other .container .box-container .box {
   box-shadow:  0 5px 10px rgba(0,0,0,0.2);
   border-radius: 5px;
   background-color: #C3FCF1;
@@ -821,7 +878,7 @@
   height: 450px;
 }
 
-.pastpaper .container .box-container .box .btn{
+.other .container .box-container .box .btn{
   margin-top: 5px;
   display: inline-block;
   background-color: #f36e39;
@@ -830,11 +887,11 @@
   padding: 8px 25px;
 }
 
-.pastpaper .container .box-container .box .btn:hover{
+.other .container .box-container .box .btn:hover{
   letter-spacing: 1px;
 }
 
-.pastpaper .container .box-container .box:hover{
+.other .container .box-container .box:hover{
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
   transform: scale(1.02);
 }
