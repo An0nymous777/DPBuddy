@@ -48,7 +48,7 @@
 
   nav {
     display: flex;
-    padding: 35px 0% 6% 0%;
+    padding: 35px 1% 6% 1%;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -348,8 +348,9 @@
     justify-content: center;
     align-items: center;
     position: absolute;
+    top: 17vh;
+    right: 0;
     width: 100vw;
-    top: 0px;
     font-size: 40px;
     color: #F46C36;
   }
