@@ -36,7 +36,7 @@
     position: relative;
     text-align: center;
     color: #F46C36;
-    background-image: linear-gradient(rgba(31, 2, 2, 0.6), rgba(0, 0, 0, 0.3))
+    background-image: linear-gradient(rgba(31, 2, 2, 0.4), rgba(0, 0, 0, 0.3))
   }
   
   .back-video {
@@ -68,7 +68,7 @@
     left: 0;
     background: url(santa.png);
     background-position: top;
-    z-index: 1;
+    z-index: -1;
     background-size: contain;
     animation: movesanta 8s ease-in-out infinite;
   }
@@ -88,10 +88,10 @@
       transform: translateX(40vw) translateY(50px);
     }
     95%{
-      transform: translateX(100vw) translateY(50px);
+      transform: translateX(100vw) translateY(-50px);
     }
     100%{
-      transform: translateX(100vw) translateY(50px);
+      transform: translateX(100vw) translateY(-50px);
     }
   }
 
@@ -233,7 +233,7 @@
   .text-box h1 {
     font-size: 62px;
     color: #F46C36;
-    z-index: 1;
+    z-index: 5;
   }
   
   .text-box p {
