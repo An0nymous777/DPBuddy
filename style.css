@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
   }
   
   
@@ -43,7 +44,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: -10;
   }
   .header::before{
     content: '';
@@ -51,12 +52,12 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 350px;
+    height: 36vh;
     background: url(tree.png);
     background-repeat: repeat-x;
     background-position: top;
     background-size: cover;
-    z-index: 1;
+    z-index: -1;
   }
 
   .header::after{
@@ -108,13 +109,16 @@
     }
   }
 
-
   .header .snow{
-    position: relative;
+    position: absolute;
+    top:0;
     display: flex;
+    height: 100vh;
+    overflow: hidden;
   }
 
   .header .snow span{
+    z-index: 1;
     position: relative;
     min-width: 5px;
     height: 5px;
@@ -1032,6 +1036,7 @@
 	line-height: 26px;
 	text-decoration: none;
 	color: #FFF;
+  z-index: 1;
 	text-shadow: 0 1px 2px rgba(0,0,0,0.75);
   color: #C3FCF1;
   padding: 12px 34px;
@@ -1059,16 +1064,7 @@
 	url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAXCAYAAACFxybfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAodJREFUeNrsVb1rWlEUv2pN/GqspKRSKFYXWzEloIWif0Fn6dJChQ7OQil0qd3EzcEpg0OgdHDr4CQODk7VRlLMEIVqApX4We0zflR9/Z1Ui4T34ksaaAYP/Hzc673n/M6550PG8zz73yKjn0wm83fDYDAwo9HINBrNnwOQg4MDs0ql2lQqlfdAWont7ng8Pjw+Ps44nc4G1pI9EXWaSOzt7TGO42aH5Pv7+08ajUZ0MBiUeXEZd7vdL5VK5fX29rZ+5tQiEmdxKrlcjsEYczgcynK5/BKKv/IXFNz/XiqVXkHdjUuRIA9SqdRD8or/R8Ez9fr9fqHVakUR4c2z0REjIQuHw2ZcrPBXLCA0RHTezEdHjIQqkUhEr9I4HOILhQLf6/VoOUFEvDMiQiToDx1Cdz+bzZ6bUFarlel0OkkVUK/XWbvdPoVer5fh3ntsfwJ+CJ2XA4p0Op1bpBgJyxDehQQ6nQ5DZXHBYDBZq9V+EhFUndnr9drEqoc2bwJbwGPgtohuVSwWe2Gz2TZMJpNgRKi6qtUqg2EWj8dTgUDgo0KhWPN4PC70EvXOzs67fD6/S6kiRIKeZA1YJ2MiJNbdbvfTUCjkV6vVK2hcDF8GI2w0GrGTkxM2HA5PDxaLxSOfz/cWEfk81X0XIMMFgJJ/srBjCgk8IdcfuVyuZ36//7nFYtkQyAMumUzuRiKRD0jMFLa+AZOpYwqgB/ziBVqmVBKUO7eAB/R0WG/Z7XaTVqtdbTabHJL6EK2djBaBPHA0NSqpbUsiMUeEBgpF4Q5AbZrmSJ/yEWgBTaBNHl9kdkgmMUeG7qwAq9PqovceTA3zlxlgsuswyuXsGsiSxJLEkoSY/BZgAEjRodi+uBruAAAAAElFTkSuQmCC) no-repeat 100% 0;
 	
 }
-.button:hover {
-	background: #a61715;
-	text-shadow: 0 1px 2px rgba(0,0,0,0.75), 0 0 40px #FFF;
-	box-shadow:
-		inset 1px 1px 0px rgba(255,255,255,0.25), /* highlight */
-		inset 0 0 6px #da3b2c, /* inner glow */
-		inset 0 80px 80px -40px #dd4330, /* gradient */
-		1px 1px 3px rgba(0,0,0,0.75); /* shadow */
-		
-}
+
 .button:focus {
 	outline: none; /*FF*/
 }
