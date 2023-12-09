@@ -3,7 +3,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-   
   }
 
   body{
@@ -11,6 +10,7 @@
   }
   
   
+
   .midcol hr {
     width: 100%
   }
@@ -41,6 +41,7 @@
     position: relative;
     text-align: center;
     color: #F46C36;
+    overflow-x: hidden;
     background-image: linear-gradient(rgba(50, 7, 7, 0.4), rgba(50, 7, 7, 0.3))
   }
   
@@ -107,6 +108,7 @@
     z-index: -1;
     background-size: contain;
     animation: movesanta 8s ease-in-out infinite;
+    overflow-x: hidden;
   }
 
   .santa span{
@@ -850,7 +852,7 @@
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     }
     .text-box {
-      top: 40%;
+      top: 45%;
     }
   }
 
