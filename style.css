@@ -1221,3 +1221,14 @@
 	     -o-transition: 50ms linear;
 	        transition: 50ms linear;
 }
+
+/* ----------tips------------ */
+.tips{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tips ul{
+  list-style: circle;
+  margin: 10px 0;
+}
