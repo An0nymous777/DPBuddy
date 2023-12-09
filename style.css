@@ -102,7 +102,7 @@
     left: 0;
     background: url(xmast/santa.png);
     background-position: top;
-    z-index: 9;
+    z-index: -1;
     background-size: contain;
     animation: movesanta 8s ease-in-out infinite;
   }
@@ -139,11 +139,6 @@
     overflow: hidden;
   }
 
-
-
-
-
-
   @keyframes movesanta{
     0%{
       transform: translateX(0px) translateY(-50px);
@@ -165,6 +160,10 @@
     }
   }
 
+  .smallh1{
+    display: none;
+  }
+
   @media(max-width: 840px){
     .header::after{
       width: 300px;
@@ -175,6 +174,14 @@
     .header::after{
       width: 250px;
       height:124px;
+    }
+  }
+  @media(max-width: 485px){
+    .bigh1{
+      display: none;
+    }
+    .smallh1{
+      display: block;
     }
   }
 
