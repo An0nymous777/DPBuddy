@@ -3,6 +3,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+  }
+
+  body{
     overflow-x: hidden;
   }
   
@@ -37,7 +40,7 @@
     position: relative;
     text-align: center;
     color: #F46C36;
-    background-image: linear-gradient(rgba(31, 2, 2, 0.4), rgba(0, 0, 0, 0.3))
+    background-image: linear-gradient(rgba(50, 7, 7, 0.4), rgba(50, 7, 7, 0.3))
   }
   
   .back-video {
@@ -46,33 +49,99 @@
     bottom: 0;
     z-index: -10;
   }
-  .header::before{
+  .header .tree{
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 36vh;
-    background: url(tree.png);
+    background: url(xmast/tree.png);
+    background-repeat: repeat-x;
+    background-position: top;
+    background-size: cover;
+    z-index: -1;
+  }
+  .tree span{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 100%;
+    height: 36vh;
+    background: url(xmast/tree-white.png);
+    background-repeat: repeat-x;
+    background-position: top;
+    background-size: cover;
+    z-index: -1;
+  }
+  .tree span:nth-child(1){
+    filter: blur(1px);
+  }
+  .tree span:nth-child(2){
+    filter: blur(3px);
+  }
+
+  .tree span:nth-child(3){
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 100%;
+    height: 36vh;
+    background: url(xmast/tree.png);
     background-repeat: repeat-x;
     background-position: top;
     background-size: cover;
     z-index: -1;
   }
 
-  .header::after{
-    content: '';
+  .santa{
     position: absolute;
     width: 460px;
     height:229px;
     top: 12vh;
     left: 0;
-    background: url(santa.png);
+    background: url(xmast/santa.png);
     background-position: top;
-    z-index: -1;
+    z-index: 9;
     background-size: contain;
     animation: movesanta 8s ease-in-out infinite;
   }
+
+  .santa span{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 460px;
+    height:229px;
+    background: url(xmast/santa-gray.png);
+    background-position: top;
+    background-size: contain;
+    overflow: hidden;
+    z-index: -2;
+  }
+
+  .santa span:nth-child(1){
+    filter: blur(3px);
+  }
+  .santa span:nth-child(2){
+    filter: blur(6px);
+  }
+
+  .santa span:nth-child(3){
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 460px;
+    height:229px;
+    background: url(xmast/santa.png);
+    background-position: top;
+    background-size: contain;
+    overflow: hidden;
+  }
+
+
+
+
 
 
   @keyframes movesanta{
@@ -238,6 +307,37 @@
     font-size: 62px;
     color: #F46C36;
     z-index: 5;
+    white-space: nowrap;
+  }
+
+  .text-box span {
+    position: relative;
+    width: 100%;
+    height:100%;
+  }
+  .text-box .x-hat::after{
+    content: "";
+    position: absolute;
+    top:-3%;
+    right: 2%;
+    width: 125%;
+    height: 35%;
+    background: url(xmast/hat.png);
+    background-position: top;
+    background-size: cover;
+    z-index: 1;
+  }
+  .text-box .x-sock::after{
+    content: "";
+    position: absolute;
+    top:40%;
+    left: 25%;
+    width: 60%;
+    height: 140%;
+    background: url(xmast/sock.png);
+    background-position: bottom;
+    background-size: cover;
+    z-index: -1;
   }
   
   .text-box p {
