@@ -1,0 +1,1920 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Physics booklet</title>
+<link href="booklet.css" rel="stylesheet" type="text/css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="xmast/xmast-logo.png"></a>
+        <div class="nav-links" id="navLinks">
+          <span class="material-symbols-outlined" id="close" onclick="hideMenu()">close</span>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pastpaper.html"><span>Past Paper</span></a></li>
+            <li><a href="revisionvillageclone/revisionvillage.html"><span>RevisionVillage</span></a></li>
+            <li><a href="savemyexam.html"><span>SaveMyExam notes</span></a></li>
+            <li><a href="litcharts.html"><span>LitCharts</span></a></li>
+            <li class="dropdown">
+              <a href="bookletphysics.html">
+                Ultimate formula booklet
+                <ul class="submenu">
+                  <li><a href="bookletphysics.html">Physics</a></li>
+                  <li><a href="bookletmath.html">Math</a></li>
+                </ul>
+              </a>
+            </li>
+            <li><a href="studyguide.html">Study guides</a></li>
+          </ul>
+        </div>
+        <div class="heading">
+          <h1>Physics Booklet</h1>
+        </div>
+        <span class="material-symbols-outlined" id="menu" onclick="showMenu()">menu</span>
+      </nav>
+</section>
+
+<div class="starter">
+    <div class="control">
+        <p class="toggle">Annotations:</p>
+        <label class="switch">
+            <input type="checkbox" id="annotate" onclick="annotationswitch()" checked>
+            <span class="slider"></span>
+        </label>
+    </div>
+    <p>*On the test, you won't have the annotations, so please practice without it</p>
+</div>
+
+<!-- -------------------------------first page------------------------ -->
+<section class="formula-container">
+    <div class="row">
+    <div class="col-left">
+        <div id="spaceoneunitone"></div>
+        <div class="sidecolerror">
+            <p class="annotation">This is an example of how an annotation looks like. Hover it to see extra information (You can switch it off using the toggle switch above)
+            <span>
+                <b id="bullet">Unit:</b>Unit will be shown here</sup><br>
+                <b id="bullet">Definition/note:</b> Extra note will be shown here
+                </span>
+            </p>
+        </div>
+    </div>
+    <div class="midcol">
+        <img src="annotated-physics-data-booklet-2016 (1)/annotated-physics-data-booklet-2016 (1)-01.png">
+        <hr>
+    </div>
+    <div class="col-right">
+    </div>
+</section>
+<!-- -----------------------contents---------------------- -->
+<section class="formula-container">
+    <div class="row">
+    <div class="col-left">
+    </div>
+    <div class="midcol">
+        <img src="annotated-physics-data-booklet-2016 (1)/annotated-physics-data-booklet-2016 (1)-03.png">
+        <hr>
+    </div>
+    <div class="col-right">
+    </div>
+</section>
+<!-- -----------------------unit page---------------------- -->
+<section class="formula-container">
+    <div class="row">
+    <div class="col-left">
+    </div>
+    <div class="midcol">
+        <img src="annotated-physics-data-booklet-2016 (1)/annotated-physics-data-booklet-2016 (1)-05.png">
+        <hr>
+    </div>
+    <div class="col-right">
+    </div>
+</section>
+<!-- -----------------------unit page 2---------------------- -->
+<section class="formula-container">
+    <div class="row">
+    <div class="col-left">
+    </div>
+    <div class="midcol">
+        <img src="annotated-physics-data-booklet-2016 (1)/annotated-physics-data-booklet-2016 (1)-06.png">
+        <hr>
+    </div>
+    <div class="col-right">
+    </div>
+</section>
+<!-- -----------------------symbol---------------------- -->
+<section class="formula-container">
+    <div class="row">
+    <div class="col-left">
+    </div>
+    <div class="midcol">
+        <img src="annotated-physics-data-booklet-2016 (1)/annotated-physics-data-booklet-2016 (1)-07.png">
+        <hr>
+    </div>
+    <div class="col-right">
+    </div>
+</section>
+<!-- -----------------------unit1 and 2---------------------------------- -->
+<section class="formula-container">
+    <div class="row">
+    <div class="col-left">
+        <div id="spaceoneunitone"></div>
+        <div class="sidecolerror">
+            <p class="annotation">y = Result</p>
+            <p class="annotation">a, b, c = Quantities</p>
+            <p class="annotation">d = Uncertainties</p>
+        </div>
+        <div id="spacetwounitonetwo"></div>
+        <div class="sidecolmotion">
+        <p class="annotation" id="a">v = Final velocity
+            <span>
+            <b id="bullet">Unit:</b> <b>ms<sup>-1</sup></b><br>
+            <b id="bullet">Definition/note:</b>
+                <br>&nbsp;&#8226;Rate of change of <b>displacement</b> to <b>time</b> (<sup>&#916;s</sup>&frasl;<sub>&#916;t</sub>).
+                <br>&nbsp;&#8226;Velocity at the <b>end</b> of the motion.
+                <br>&nbsp;&#8226;<b>Vector</b> quantity.
+            </span>
+        </p>
+        <p class="annotation">u = Initial velocity
+            <span>
+            <b id="bullet">Unit:</b> <b>ms<sup>-1</sup></b><br>
+            <b id="bullet">Definition/note:</b>
+                <br>&nbsp;<b>-</b> Rate of change of <b>displacement</b> to <b>time</b> (<sup>&#916;s</sup>&frasl;<sub>&#916;t</sub>).
+                <br>&nbsp;<b>-</b> Velocity at the <b>start</b> of the motion.
+                <br>&nbsp;<b>-</b><b>Vector</b> quantity.     
+            </span>
+        </p>
+        <p class="annotation" id="a">a = Acceleration<br>("g" for gravity).
+            <span>
+            <b id="bullet">Unit:</b> <b>ms<sup>-2</b></sup>
+            <br><b id="bullet">Definition/note:</b> 
+            <br>&nbsp;&#8226;Rate of change of <b>velocity</b> (<sup>&#916;v</sup>&frasl;<sub>&#916;t</sub>).
+            <br>&nbsp;&#8226;Gravity = <b>-9.81</b>ms<sup>-2</sup>.
+            </span>
+        </p>
+        <p class="annotation">s = Displacement
+            <span>
+            <b id="bullet">Unit:</b> <b>m (meter)</b><br>
+            <b id="bullet">Definition/note:</b> 
+            <br>&nbsp;<b>-</b> Velocity at the <b>start</b> of the motion.
+            <br>&nbsp;<b>-</b>The shortest distance in a straight line
+                    from the initial position to the final position
+                    of an object, considering both <b>magnitude</b>
+                    and <b>direction</b>.
+            </span>
+        </p>
+        <p class="annotation">t = Time elapsed
+            <span>
+            <b id="bullet">Unit:</b> <b>s (seconds)</b><br>
+            <b id="bullet">Definition/note:</b>Total time taken for the 
+                <br>motion to happen
+            </span>
+        </p>
+        </div>
+        <div id="leftonethree"></div>
+        <div class="sidecolwork">
+        <p class="annotation">W = Work done
+            <span>
+            <b id="bullet">Unit:</b> <b>J (N&#183;m = kg&#183;m<sup>2</sup>&#183;s<sup>-2</sup>)</b><br>
+            <b id="bullet">Definition/note:</b>
+                <br>&nbsp;&#8226;Force <b>&times;</b> horizontal displacement
+                <br>&nbsp;&#8226;Scalar quantity.
+                <br>&nbsp;&#8226;Measures the transfer of energy due 
+                            to a force.
+            </span>
+        </p>
+        <p class="annotation">F = Force
+            <span>
+            <b id="bullet">Unit:</b> <b>N (Newton) (kg&#183;m&#183;s<sup>-2</sup>)</b><br>
+            <b id="bullet">Definition/note:</b>
+                <br>&nbsp;&#8226;<b>A vector</b> - Forces change the velocity or 
+                                shape of objects.
+            </span>
+        </p>
+        <p class="annotation">s = Displacement
+            <span>
+            <b id="bullet">Unit:</b> <b>m (meter)</b><br>
+            <b id="bullet">Definition/note:</b> The <b>shortest</b> distance in a 
+                    straight line from the <b>initial position</b> to the 
+                    <b>final position</b> of an object, considering both
+                    <b>magnitude</b> and <b>direction</b>.
+            </span>
+        </p>
+        <p class="annotation">EK=Kinetic energy
+            <span>
+            <b id="bullet">Unit:</b> <b>J (N&#183;m = kg&#183;m<sup>2</sup>&#183;s<sup>-2</sup>)</b><br>
+            <b id="bullet">Definition/note:</b>
+                <br>&nbsp;&#8226;<b>Kinectic energy</b> is the <b>energy</b> of a body due
+                            to its <b>motion</b>.
+                <br>&nbsp;&#8226;Energy can <b>neither</b> be <b>created nor destroyed</b>; 
+                            it can only be <b>conserved/changed</b> from one  
+                            form to another.
+                <br>&nbsp;&#8226;A falling object <b>transforms potential energy</b> 
+                            to <b>kinetic energy</b> (ΔKE+ΔPE=0).
+            </span>
+        </p>
+        <p class="annotation">m = Mass
+            <span>
+            <b id="bullet">Unit:</b> <b>kg</b><br>
+            <b id="bullet">Definition/note:</b> Mass is different from <b>weight</b>. 
+                                Mass is a <b>scalar</b>, while weight is a <b>gravitational 
+                                force</b> (vector) exerted on an object.
+            </span>
+        </p>
+        <p class="annotation">v = Velocity
+            <span>
+            <b id="bullet">Unit:</b> <b>ms<sup>-1</sup></b><br>
+            <b id="bullet">Definition/note:</b>
+                <br>&nbsp;&#8226;Rate of change of displacement to time (<sup>&#916;s</sup>&frasl;<sub>&#916;t</sub>).
+                <br>&nbsp;&#8226;Speed is a scalar. Velocity is a vector.
+            </span>
+        </p>
+        <p class="annotation">EP=Elastic potential energy
+            <span>
+            <b id="bullet">Unit:</b> <b>J (N&#183;m = kg&#183;m<sup>2</sup>&#183;s<sup>-2</sup>)</b><br>
+            <b id="bullet">Definition/note:</b>
+                <br>&nbsp;&#8226;<b>Elastic potential energy</b> is the energy <b>stored</b> 
+                                as the result of the <b>deformation</b> of an elastric
+                                object such as the stretching of a spring.
+                <br>&nbsp;&#8226;Energy can <b>neither</b> be <b>created nor destroyed</b>; 
+                            it can only be <b>conserved/changed</b> from one  
+                            form to another.
+            </span>
+        </p>
+        <p class="annotation">EP=Potential energy
+            <span>
+            <b id="bullet">Unit:</b> <b>J (N&#183;m = kg&#183;m<sup>2</sup>&#183;s<sup>-2</sup>)</b><br>
+            <b id="bullet">Definition/note:</b>
+                <br>&nbsp;&#8226;<b>Potential energy</b> is the <b>energy</b> an object
+                            opposes due to its <b>position/height</b>.
+                <br>&nbsp;&#8226;Energy can <b>neither</b> be <b>created nor destroyed</b>; 
+                            it can only be <b>conserved/changed</b> from one  
+                            form to another.
+                <br>&nbsp;&#8226;A falling object <b>transforms potential energy</b>  
+                            <br>to <b>kinetic energy</b> (ΔKE+ΔPE=0).
+            </span>
+        </p>
+        <p class="annotation">k = Spring constant
+            <span>
+            <b id="bullet">Unit:</b> <b>N/m</b><br>
+            <b id="bullet">Definition/note:</b> F<sub>spring</sub> = -k &times; x
+            </span>
+        </p>
+        <p class="annotation">x = extension
+            <span>
+            <b id="bullet">Unit:</b> <b>m (meter)</b><br>
+            <b id="bullet">Definition/note:</b>
+                <br>&nbsp;&#8226;The extended displacement of the spring.
+                <br>&nbsp;&#8226;F<sub>spring</sub> = -k &times; x
+            </span>
+        </p>
+        <p class="annotation">g = Earth's gravity
+            <span>
+            <b id="bullet">Unit:</b> <b>ms<sup>-2</sup></b><br>
+            <b id="bullet">Definition/note:</b> = -9.81ms<sup>-2</sup>
+            </span>
+        </p>
+        <p class="annotation">h = Height
+            <span>
+            <b id="bullet">Unit:</b> m (meter)</sup></b><br>
+            </span>
+        </p>
+        </div>
+    </div>
+    <div class="midcol">
+        <img src="annotated-physics-data-booklet-2016 (1)/annotated-physics-data-booklet-2016 (1)-08.png">
+        <hr>
+    </div>
+    <div class="col-right">
+        <div id="rightoneone"></div>
+        <div class="sidecolforces">
+            <p class="annotation">F = Resultant force
+                <span>
+                <b id="bullet">Unit:</b> N (Newton) (kg&#183;m&#183;s<sup>-2</sup>)</b><br>
+                <b id="bullet">Definition/note:</b>
+                    <br>&nbsp;&#8226;<b>A vector</b> - Forces change the velocity or 
+                                    shape of objects.
+                    <br>&nbsp;&#8226;<b>Steps to determine the resultant force:</b>
+                        <br>&emsp;-Resolve all acting forces into horizontal 
+                                &emsp;&ensp;and vertical components (refer to 1.3).
+                        <br>&emsp;-Add up the horizontal components.
+                        <br>&emsp;-Add up the vertical components.
+                    <br>&nbsp;&#8226;<b>Equlibirum</b> is when net force = 0. This
+                                    means the object is either at rest or travel at 
+                                    constant velocity. 
+                </span>
+            </p>
+            <p class="annotation">m = Mass
+                <span>
+                <b id="bullet">Unit:</b> <b>kg</b><br>
+                <b id="bullet">Definition/note:</b> Mass is different from <b>weight</b>. 
+                                    Mass is a <b>scalar</b>, while weight is a <b>gravitational 
+                                    force</b> (vector) exerted on an object.
+                </span>
+            </p>
+            <p class="annotation" id="a">a = Acceleration
+                <span>
+                <b id="bullet">Unit:</b> <b>ms<sup>-2</sup></b>
+                <br><b id="bullet">Definition/note:</b> 
+                <br>&nbsp;&#8226;Rate of change of <b>velocity</b> (<sup>&#916;v</sup>&frasl;<sub>&#916;t</sub>).
+                <br>&nbsp;&#8226;Gravity = <b>-9.81</b>ms<sup>-2</sup>.
+                </span>
+            </p>
+            <p class="annotation">us = Coefficient of static friction
+                <span>
+                <b id="bullet">Unit:</b>None<br>
+                <b id="bullet">Definition/note:</b> 
+                    <br>&nbsp;&#8226;Static friction stops objects <b>from beginning</b> 
+                                    <b>to move</b>.
+                    <br>&nbsp;&#8226;Affected by the nature of the two surfaces
+                                (<b>not</b> by the <b>surface area/velocity</b> of the object).
+                </span>
+            </p>
+            <p class="annotation">ud = .."dynamic"..
+                <span>
+                    <b id="bullet">Unit:</b>None<br>
+                    <b id="bullet">Definition/note:</b> 
+                    <br>&nbsp;&#8226;Dynamic friction <b>slows objects down</b> when 
+                                    <b>they are moving</b>.
+                    <br>&nbsp;&#8226;Affected by the nature of the two surfaces
+                                (<b>not</b> by the <b>surface area/velocity</b> of the object).
+                </span>
+            </p>
+            <p class="annotation">Ff = Frictional force
+                <span>
+                <b id="bullet">Unit:</b> <b>N (Newton) (kg&#183;m&#183;s<sup>-2</sup>)</sup></b><br>
+                <b id="bullet">Definition/note:</b> Ff is a non conservative force
+                                which <b>opposes</b> motion <b>(No motion <b>=</b> no friction)</b>.
+                </span>
+            </p>
+            <p class="annotation">R = Normal reaction force
+                <span>
+                <b id="bullet">Unit:</b> <b>N (Newton) (kg&#183;m&#183;s<sup>-2</sup>)</b><br>
+                <b id="bullet">Definition/note:</b>
+                    <br>&nbsp;&#8226;Force exerted <b>by a surface</b> to support 
+                                the weight of an object resting on it. 
+                    <br>&nbsp;&#8226;<b>Horizontal</b> object: W = R = mg.
+                    <br>&nbsp;&#8226;<b>Inclined</b> object: R = mgcos(&#952;).
+                    <br>&nbsp;&#8226;Always act <b>perpendicular</b> to the 
+                                contact surface.
+                </span>
+            </p>
+        </div>
+        <div id="rightonetwo"></div>
+        <div class="sidecolmom">
+        <p class="annotation">p = Momemtum
+            <span>
+            <b id="bullet">Unit:</b> <b>kg&#183;ms<sup>-1</sup></b><br>
+            <b id="bullet">Definition/note:</b>
+            <br>&nbsp;&#8226;<b>"Mass in motion"</b> or "Quanity of <b>motion</b> of an object".
+            <br>&nbsp;&#8226;Vectory quantity (has the <b>same direciton</b> as the 
+                        object's velocity)
+            <br>&nbsp;&#8226;The law of conservation of momentum states that 
+                        the total momentum <b>before</b> the collision is equal
+                        to the sum of total momentum <b>after</b> the collision in 
+                        a closed system(<b>total p<sub>initial</sub> = total p<sub>final</sub></b>).
+            <br>&nbsp;&#8226;There are two types of collisions:
+                <br>&emsp;-<b>Inelastic collision:</b> objects collide and <b>bounce</b> with <b>no change in kinetic energy</b>. 
+                <br>&emsp;-<b>Elastic collision:</b> objects collide and <b>stick</b> together 
+                with some kinetic energy being <b>transfered to 
+                other forms</b> (usually thermal).
+
+            </span>
+        </p>
+        <p class="annotation">m = Mass
+            <span>
+            <b id="bullet">Unit:</b> <b>kg</b><br>
+            <b id="bullet">Definition/note:</b> Mass is different from <b>weight</b>. 
+                                Mass is a <b>scalar</b>, while weight is a <b>gravitational 
+                                force</b> (vector) exerted on an object.
+            </span>
+        </p>
+        <p class="annotation">v = Velocity
+            <span>
+            <b id="bullet">Unit:</b> <b>ms<sup>-1</sup></b><br>
+            <b id="bullet">Definition/note:</b>
+                <br>&nbsp;&#8226;Rate of change of displacement to time (<sup>&#916;s</sup>&frasl;<sub>&#916;t</sub>).
+                <br>&nbsp;&#8226;Speed is a scalar. Velocity is a vector.
+            </span>
+        </p>
+        <p class="annotation">F = Force
+            <span>
+            <b id="bullet">Unit:</b> <b>N (Newton) (kg&#183;m&#183;s<sup>-2</sup>)</b><br>
+            <b id="bullet">Definition/note:</b>
+                <br>&nbsp;&#8226;<b>A vector</b> - Forces change the velocity or 
+                                shape of objects.
+            </span>
+        </p>
+        <p class="annotation">t = Time
+            <span>
+            <b id="bullet">Unit:</b> <b>s (seconds)</b>
+            </span>
+        </p>
+        <p class="annotation">EK = Kinetic energy
+            <span>
+            <b id="bullet">Unit:</b> <b>J (N&#183;m = kg&#183;m<sup>2</sup>&#183;s<sup>-2</sup>)</b><br>
+            <b id="bullet">Definition/note:</b>
+                <br>&nbsp;&#8226;<b>Kinectic energy</b> is the <b>energy</b> of a body due
+                            to its <b>motion</b>.
+                <br>&nbsp;&#8226;Energy can <b>neither</b> be <b>created nor destroyed</b>; 
+                            it can only be <b>conserved/changed</b> from one  
+                            form to another.
+                <br>&nbsp;&#8226;A falling object <b>transforms potential energy</b> 
+                            to <b>kinetic energy</b> (ΔKE+ΔPE=0).
+            </span>mj
+        </p>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- -----------------------unit 3 and 4---------------------- -->
+<section class="formula-container">
+    <div class="row">
+        <div class="col-left">
+            <div id="spacethermal"></div>
+            <div class="sidecolthermal">
+                <p class="annotation">Q = Energy/Heat
+                    <span>
+                    <b id="bullet">Unit:</b> <b>J (N&#183;m = kg&#183;m<sup>2</sup>&#183;s<sup>-2</sup>)</b><br>
+                    <b id="bullet">Definition/note:</b>
+                    <br>&nbsp;&#8226;Thermal energy(<b>heat</b>) refers to the total <b>kinetic</b>
+                                <b>energy</b> of the particles within a substance 
+                                (including translation, rotation, virbration). 
+                    <br>&nbsp;&#8226;Heat transfers from higher temperature object to lower
+                                 temperature object.
+                    <br>&nbsp;&#8226;Objects which are in thermal equilibrium have the
+                                <same>temperature
+                    <br>&nbsp;&#8226;It is the <b>increase</b> in internal energy (E<sub>int</sub>=EK+EP), 
+                                if there is a <b>change</b> in temperature.
+                                
+                    </span>
+                </p>
+                <p class="annotation">m = Mass
+                    <span>
+                    <b id="bullet">Unit:</b> <b>kg</b><br>
+                    <b id="bullet">Definition/note:</b> Mass is different from <b>weight</b>. 
+                                        Mass is a <b>scalar</b>, while weight is a <b>gravitational 
+                                        force</b> (vector) exerted on an object.
+                    </span>
+                </p>
+                <p class="annotation">c = Specific heat capacity
+                    <span>
+                    <b id="bullet">Unit:</b> <b>J&#183;kg<sup>-1</sup>&#183;K<sup>-1</sup></b><br>
+                    <b id="bullet">Definition/note:</b>
+                    <br>&nbsp;&#8226;The energy <b>needed</b> to <b>raise</b> the temperature
+                                of <b>1kg</b> of the substance by <b>1K</b>.
+                    <br>&nbsp;&#8226;Different substances have different specific
+                                heat capacities because of different <b>densities</b>
+                                and <b>physical properties</b>.
+                    </span>
+                </p>
+                <p class="annotation">T = Temperature
+                    <span>
+                    <b id="bullet">Unit:</b> <b>K (Kelvin)</b><br>
+                    <b id="bullet">Definition/note:</b>
+                    <br>&nbsp;&#8226;<b>Scalar</b> quantity and is measured in <b>KELVIN</b>.
+                    <br>&nbsp;&#8226;Temperature(K) = Temperature(C) + 273
+                    <br>&nbsp;&#8226;<b>0K</b> is absolute temperature where particles 
+                                have <b>zero average kinetic energy</b>.
+                    </span>
+                </p>
+                <p class="annotation">L = Specific latent heat
+                    <span>
+                    <b id="bullet">Unit:</b> <b>J&#183;kg<sup>-1</sup></b><br>
+                    <b id="bullet">Definition/note:</b>
+                    <br>&nbsp;&#8226;The energy <b>required</b> to achieve <b>a change</b>
+                                <b>of phase</b>:
+                        <br>&emsp;-Specific latent heat of fusion: energy required 
+                        to change the phase of <b>1kg</b> of substance
+                        from <b>solid to liquid</b> (without ΔT).
+                        <br>&emsp;-Specific latent heat of vaporization: energy  
+                        required to change the phase of <b>1kg</b> of 
+                        substance from <b>liquid to gas</b> (without ΔT).
+                    </span>
+                </p>
+            </div>
+            <div id="spaceoscillation"></div>
+            <div class="sidecoloscillation">
+                <p class="annotation">T = Period
+                    <span>
+                    <b id="bullet">Unit:</b> <b>s (seconds)</b><br>
+                    <b id="bullet">Definition/note:</b>
+                    <br>&nbsp;&#8226;Time taken for one complete oscillation.
+                    <br>&nbsp;&#8226;On displacement-time graph, period is the 
+                                distance between corresponding points of 
+                                two consecutive waves.
+                    <br><img src="images/shm1.png">
+                    </span>
+                </p>
+                <p class="annotation">f = Frequency
+                    <span>
+                    <b id="bullet">Unit:</b> <b>Hz</b><br>
+                    <b id="bullet">Definition/note:</b>
+                    <br>&nbsp;&#8226; Number of times the object oscillates per unit  
+                                time (usually one second).
+                    <br>&nbsp;&#8226; f = 1/T.
+                    </span>
+                </p>
+            </div>
+            <div class="sidecoltravellingwaves">
+                <p class="annotation">c = Velocity
+                    <span>
+                    <b id="bullet">Unit:</b> <b>ms<sup>-1</sup></b><br>
+                    <b id="bullet">Definition/note:</b>
+                        <br>&nbsp;&#8226;Speed of wave. 
+                        <br>&nbsp;&#8226;Rate of change of displacement to time (<sup>&#916;s</sup>&frasl;<sub>&#916;t</sub>).
+                        <br>&nbsp;&#8226;Vector quantity.
+                    </span>
+                </p>
+                <p class="annotation">f = Frequency
+                    <span>
+                    <b id="bullet">Unit:</b> <b>Hz</b><br>
+                    <b id="bullet">Definition/note:</b>
+                    <br>&nbsp;&#8226; Number of times the object oscillates per unit  
+                                <br>time (usually one second).
+                    <br>&nbsp;&#8226; f = 1/T.
+                    </span>
+                </p>
+                <p class="annotation">lambda = Wavelength
+                    <span>
+                    <b id="bullet">Unit:</b> <b>s (seconds)</b><br>
+                    <b id="bullet">Definition/note:</b>
+                    <br>&nbsp;&#8226;The length of one complete oscillation.
+                    <br>&nbsp;&#8226;On displacement-time graph, wave length 
+                                is the distance between corresponding 
+                                points of two consecutive waves.
+                    <br><img src="images/shm1.png">
+                    </span>
+                </p>
+            </div>
+            <div class="sidecolcharacteristics">
+                <p class="annotation">I = Intensity
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">A = Amplitude
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">x = Distance from source
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">I0 = Original intensity
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">theta = Angle of polarizer
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="midcol">
+            <img src="annotated-physics-data-booklet-2016 (1)/annotated-physics-data-booklet-2016 (1)-09.png">
+            <hr>
+        </div>
+        <div class="col-right">
+            <div id="spacegas"></div>
+            <div class="sidecolgas">
+                <p class="annotation">p = Pressure
+                    <span>
+                    <b id="bullet">Unit:</b> Pa (Nm<sup>-3</sup>)<br>
+                    <b id="bullet">Definition/note:</b>
+                    <br>&nbsp;&#8226;<b>Normal</b> force per unit area.
+                    </span>
+                </p>
+                <p class="annotation">F = Force
+                    <span>
+                    <b id="bullet">Unit:</b> <b>N (Newton) (kg&#183;m&#183;s<sup>-2</sup>)</b><br>
+                    <b id="bullet">Definition/note:</b>
+                    <br>&nbsp;&#8226;<b>A vector</b> - Forces change the velocity or 
+                                shape of objects.
+                    </span>
+                </p>
+                <p class="annotation">A = Area
+                    <span>
+                    <b id="bullet">Unit:</b> <b>m<sup>2</sup></b><br>
+                    <b id="bullet">Definition/note:</b>
+                    <br>&nbsp;&#8226;<b>Rectangle</b> = length &times; width</b>
+                    <br>&nbsp;&#8226;<b>Circle</b> = &pi;r<sup>2</sup></b>
+                    </span>
+                </p>
+                <p class="annotation">n = Number of moles
+                    <span>
+                    <b id="bullet">Unit:</b> <b>mol</b><br>
+                    <b id="bullet">Definition/note:</b>
+                    <br>&nbsp;&#8226;A unit quality used to measure the number of
+                                atoms or molecules.
+                    <br>&nbsp;&#8226;1 mole = 6.022 &times; 10<sup>23</sup> atoms or molecules
+                    <br>&nbsp;&#8226;Molar mass is the mass of 1 mole of any elemnt
+                                or compound, that can be used to determine the
+                                the mass or the number of molde of the object.
+                    </span>
+                </p>
+                <p class="annotation">N = Number of atoms
+                    <span>
+                    <b id="bullet">Value:</b> ms<sup>-2</sup><br>
+                    <b id="bullet">Definition/note:</b>
+                    <br>&nbsp;&#8226;The smallest invisible unit of an element.
+                    <br>&nbsp;&#8226;1 mole = 6.022 &times; 10<sup>23</sup> atoms or molecules
+                    </span>
+                </p>
+                <p class="annotation">NA = Avocadro's constant
+                    <span>
+                    <b id="bullet">Value:</b> <b>6.022 &times; 10<sup>23</sup></b><br>
+                </p>
+                <p class="annotation">V = Volume
+                    <span>
+                    <b id="bullet">Unit:</b> <b>m<sup>3</sup></b><br>
+                    <b id="bullet">Definition/note:</b>
+                    <br>&nbsp;&#8226;<b>Rectangle</b> = length &times; width &times; height</b>
+                    <br>&nbsp;&#8226;<b>Cylinder</b> = &pi;r<sup>2</sup> h</b>
+                    <br>&nbsp;&#8226;<b>Sphere</b> = <sup>4</sup>&frasl;<sub>3</sub> &pi;r<sup>3</sup></b>
+                    </span>
+                </p>
+                <p class="annotation">R = Gas constant
+                    <span>
+                    <b id="bullet">Value:</b> <b>8.31 J K<sup>-1</sup> mol<sup>-1</sup></b>
+                    </span>
+                </p>
+                <p class="annotation">T=Temperature
+                    <span>
+                    <b id="bullet">Unit:</b> <b>K (Kelvin)</b><br>
+                    <b id="bullet">Definition/note:</b>
+                    <br>&nbsp;&#8226;<b>Scalar</b> quantity and is measured in <b>KELVIN</b>.
+                    <br>&nbsp;&#8226;Temperature(K) = Temperature(C) + 273
+                    </span>
+                </p>
+                <p class="annotation">EK = Kinetic Energy
+                    <span>
+                    <b id="bullet">Unit:</b> <b>J (N&#183;m = kg&#183;m<sup>2</sup>&#183;s<sup>-2</sup>)</b><br>
+                    <b id="bullet">Definition/note:</b>
+                        <br>&nbsp;&#8226;<b>Kinectic energy</b> is the <b>energy</b> of a body due
+                                    to its <b>motion</b>.
+                        <br>&nbsp;&#8226;In a gas, E<sub>P</sub> is negligible and, therefore, all 
+                                    E<sub>K</sub> which is also the total interal energy,
+                    </span>
+                </p>
+                <p class="annotation">kb=Boltzmann's constant
+                    <span>
+                        <b id="bullet">Value:</b> <b>1.38 &times; 10<sup>-23</sup> J K<sup>-1</sup></b>
+                    </span>
+                </p>
+            </div>
+            <div id="spacebehaviour"></div>
+            <div class="sidecolbehaviour">
+                <p class="annotation">n1/n2 = Index of refraction
+                    <span>
+                    <b id="bullet">Unit:</b> ms<sup>-2</sup><br>
+                    <b id="bullet">Definition/note:</b>
+                    </span>
+                </p>
+                <p class="annotation">theta = Angle of incidence/refraction
+                    <span>
+                    <b id="bullet">Unit:</b> ms<sup>-2</sup><br>
+                    <b id="bullet">Definition/note:</b>
+                    </span>
+                </p>
+                <p class="annotation">v = Wave velocity
+                    <span>
+                    <b id="bullet">Unit:</b> ms<sup>-2</sup><br>
+                    <b id="bullet">Definition/note:</b>
+                    </span>
+                </p>
+                <p class="annotation">s = Fringe Spacing
+                    <span>
+                    <b id="bullet">Unit:</b> ms<sup>-2</sup><br>
+                    <b id="bullet">Definition/note:</b>
+                    </span>
+                </p>
+                <p class="annotation">lambda = Wavelength
+                    <span>
+                    <b id="bullet">Unit:</b> ms<sup>-2</sup><br>
+                    <b id="bullet">Definition/note:</b>
+                    </span>
+                </p>
+                <p class="annotation">D = distance to screen
+                    <span>
+                    <b id="bullet">Unit:</b> ms<sup>-2</sup><br>
+                    <b id="bullet">Definition/note:</b>
+                    </span>
+                </p>
+                <p class="annotation">d = Slit spacing
+                    <span>
+                    <b id="bullet">Unit:</b> ms<sup>-2</sup><br>
+                    <b id="bullet">Definition/note:</b>
+                    </span>
+                </p>
+                <p class="annotation">n = Any integer (order of minimum/maximum)
+                    <span>
+                    <b id="bullet">Unit:</b> ms<sup>-2</sup><br>
+                    <b id="bullet">Definition/note:</b>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="formula-container">
+    <div class="row">
+        <div class="col-left">
+            <div id="spaceelecfield"></div>
+            <div class="sidecolElecfield">
+                <p class="annotation">I = Current
+                    <span>
+                    <b id="bullet">Unit:</b> <b>Ampe (A)</b><br>
+                    <b id="bullet">Definition/note:</b>
+                    <br>&nbsp;&#8226;The rate of flow of electric charge
+                    <br>&nbsp;&#8226;The direction of electron is from negative 
+                                to positive. However, the conventional flow of
+                                current is opposite (from positive to negative)
+                    <br>&nbsp;&#8226;Direct current is a uniform current flowing in
+                                one fixed direction in a circuit. (such as in
+                                bateries or dry cells)
+                    <br>&nbsp;&#8226;Alternating curent orientate back and forth.
+                    
+
+                    </span>
+                </p>
+                <p class="annotation">q = Charge
+                    <span>
+                    <b id="bullet">Unit:</b> <b>Colomb (C)</b><br>
+                    <b id="bullet">Definition/note:</b>
+                    <br>&nbsp;&#8226;Can either be positive or negative
+                    <br>&nbsp;&#8226;Same charges will repel each other, while
+                                oppostie charges will attract each other. 
+                    </span>
+                </p>
+                <p class="annotation">t = Time
+                    <span>
+                    <b id="bullet">Unit:</b> <b>s (seconds)</b><br>
+                    </span>
+                </p>
+                <p class="annotation">F = Force
+                    <span>
+                    <b id="bullet">Unit:</b> <b>N (Newton)</b><br>
+                    <b id="bullet">Definition/note:</b>
+                    <br>&nbsp;&#8226;Force of the charges on each other
+                    <br>&nbsp;&#8226;
+                    </span>
+                </p>
+                <p class="annotation">k = Coulomb constant
+                    <span>
+                    <b id="bullet">Unit:</b> <b></b>?<br>
+                    <b id="bullet">Definition/note:</b>
+                    </span>
+                </p>
+                <p class="annotation">r = Seperation
+                    <span>
+                    <b id="bullet">Unit:</b> <b>m (meter)</b><br>
+                    <b id="bullet">Definition/note: The distance between the charges</b>
+                    </span>
+                </p>
+                <p class="annotation">E0 = Permitivity of free space
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">V = Potential
+                    <span>
+                    <b id="bullet">Unit:</b> <b>V (Voltage)</b><br>
+                    <b id="bullet">Definition/note:</b>
+                    <br>&nbsp;&#8226;The work done (energy) required per unit charge to
+                                move from one point to another
+                    </span>
+                </p>
+                <p class="annotation">W = Work done
+                    <span>
+                    <b id="bullet">Unit:</b> <b>J (Joules)</b><br>
+                    <b id="bullet">Definition/note:</b>
+                    <br>&nbsp;&#8226;Scalar quantity.
+                    <br>&nbsp;&#8226;Measures the transfer of energy due 
+                            to a force.
+                    </span>
+                </p>
+                <p class="annotation">E = Electric field strength
+                    <span>
+                    <b id="bullet">Unit:</b> <b>NC<sup>-1</sup></b><br>
+                    <b id="bullet">Definition/note:</b> the force per unit charge
+                    <br>experienced by a positive test chhange placed in a field
+                    </span>
+                </p>
+                <p class="annotation">n = Number of charges per unit volume
+        
+                </p>
+                <p class="annotation">A = X-sectional area
+                    <span>
+                    <b id="bullet">Unit:</b> <b>m<sup>2</sup></b><br>
+                    <b id="bullet">Definition/note:</b>
+                    <br>&nbsp;&#8226;Usually circle (A = pir<sup>2</sup>)
+                    </span>
+                </p>
+                <p class="annotation">v = Drift velocity
+                    <span>
+                    <b id="bullet">Unit:</b> <b>ms<sup>-1</sup></b><br>
+                    <b id="bullet">Definition/note:</b>
+                    <br>&nbsp;&#8226;The speed at which electrons moves along a conductor
+                    </span>
+                </p>
+            </div>
+            <div id="spaceEleccells"></div>
+            <div class="sidecolEleccells">
+                <p class="annotation">E = Emf
+                    <span>
+                    <b id="bullet">Unit:</b> <b>Voltage (V)</b><br>
+                    <b id="bullet">Definition/note:</b> The electromotive force (emf) of a source is defined as the energy per unit charge supplied by the source
+                    </span>
+                </p>
+                <p class="annotation">I = Current
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">R = Resistance
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">r = Internal resistance
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+            </div>
+            <div id="spaceCircularmotion"></div>
+            <div class="sidecolCircularmotion">
+                <p class="annotation">v = Velocity
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">w = Angular velocity
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">r = Radius of circle
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">a = Acceleration
+                    <<span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">T = Period of rotation
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">F = Force
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">m = Mass
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="midcol">
+            <img src="annotated-physics-data-booklet-2016 (1)/annotated-physics-data-booklet-2016 (1)-10.png">
+            <hr>
+        </div>
+        <div class="col-right">
+            <div id="spaceEleccurrent"></div>
+            <div class="sidecolEleccurrent">
+                <p class="annotation">V = Potential
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">I = Current
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">R = Resistance
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">P = Power
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">p = resistivity
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">A = X-secitonal area
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">L = Length
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+            </div>
+            <div id="spaceMageffect"></div>
+            <div class="sidecolMageffect">
+                <p class="annotation">F = Force
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">q = Charge
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">v = Velocity of charge
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">B = Magnitude of magnetic field
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">0 = Angle with field
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+            </div>
+            <div id="spaceLawofgravitation"></div>
+            <div class="sidecolLawofgravitation">
+                <p class="annotation">F = Force
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">G = Gravitational constant
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">M = Mass of body
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">m = Mass of body (in a field)
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">r = Seperation distance of bodies
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">g = Gravitational field strength
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="formula-container">
+    <div class="row">
+        <div class="col-left">
+            <div id="spaceradioactivity"></div>
+            <div class="sidecolradioactivity">
+                <p class="annotation">E = Energy
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">h = Plnck's constant
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">f = Frequency
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">lambda = Wavelength
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">c = Speed of light
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+            </div>
+            <div id="spacematter"></div>
+            <div class="sidecolmatter">
+                <p class="annotation">e = Elementary charge
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">u = Up
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">d = Down
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">c = Charm
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">s = Strange
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">t = Top
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">b = Bottom
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+            </div>
+            <div id="spaceEnergysources"></div>
+            <div class="sidecolEnergysources">
+                <p class="annotation">A = Area swept out by turbine blades
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">p = Air density
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">v = Wind speed
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="midcol">
+            <img src="annotated-physics-data-booklet-2016 (1)/annotated-physics-data-booklet-2016 (1)-11.png">
+            <hr>
+        </div>
+        <div class="col-right">
+            <div id="spacereactions"></div>
+            <div class="sidecolreactions">
+                <p class="annotation">E = Energe
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">m = Mass
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">c = Speed of light
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+            </div>
+            <div id="spacelleptons"></div>
+            <div class="sidecolleptons">
+                <p class="annotation">e = Electron
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">u = Moun
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">T = Tau
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">v = Neutrino
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+            </div>
+            <div id="spaceEnergytransfer"></div>
+            <div class="sidecolEnergytransfer">
+                <p class="annotation">p = Power
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">e = Emissivity
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">o = Stenfan-Boltzman constant
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">A = Area
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">T = Temperature
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">lambda = Wavelength
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">I = Intensity
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="formula-container">
+    <div class="row">
+        <div class="col-left">
+            <div id="spaceshm"></div>
+            <div class="sidecolshm">
+                <p class="annotation">w = Angular velocity
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">T = Period
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">a = Acceleration
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">x = Displacement from equilibrium
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">x0 = Maximum displacement
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">t = Time elapsed
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">EK=Kinetic Energy
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">ET = Total energy
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">I = Length of pendulum
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">g = Gravitational field strength
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">k = Spring constant
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+            </div>
+            <div id="spaceResolution"></div>
+            <div class="sidecolResolution">
+                <p class="annotation">theta = Angle
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">lambda = Wavelength
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">b = Slit width/diameter
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">R = Resolvance
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">^lambda = Smallest possible resolvable wavelength difference
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">m = Diffraction order
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">N = Number of slits illuminated
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="midcol">
+            <img src="annotated-physics-data-booklet-2016 (1)/annotated-physics-data-booklet-2016 (1)-12.png">
+            <hr>
+        </div>
+        <div class="col-right">
+            <div id="spacediffraction"></div>
+            <div class="sidecoldiffraction">
+                <p class="annotation">theta = Angle
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">lambda = Wavelength
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">b = Slit width
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+            </div>
+            <div id="spaceInterference"></div>
+            <div class="sidecolInterference">
+                <p class="annotation">n = Any interger (for diffraction grating)
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">lambda = wavelength
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">d = Slit spacing (for diffraction grating)
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">theta = Angle
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">d = Thickness of medium (for TFI)
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">n = Refractive index of medium (for TFI)
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">m = Any interger (for TFI)
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+            </div>
+            <div id="spaceDopplereffect"></div>
+            <div class="sidecolDopplereffect">
+                <p class="annotation">P = Perceived frequency
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">f = Actual frequency
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">v = Wave speed
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">us = Velocity of source
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">uo = Velocity of observer
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">lambda = Wavelength
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">v = Relative speed of observer and source
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">c = Speed of light
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="formula-container">
+    <div class="row">
+        <div class="col-left">
+            <div id="spaceFields"></div>
+            <div class="sidecolFields">
+                <p class="annotation">W = Work done
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">q = Charge
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">Ve = Electric potential
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">m = Mass
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">Vg = Gravitational potential
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="midcol">
+            <img src="annotated-physics-data-booklet-2016 (1)/annotated-physics-data-booklet-2016 (1)-13.png">
+            <hr>
+        </div>
+        <div class="col-right">
+            <div id="spaceFieldsatwork"></div>
+            <div class="sidecolFieldsatwork">
+                <p class="annotation">Vg = Gravitational potential
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">Ve = Electric potential
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">G = Gravitational constant
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">k = Coulomb constant
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">M = Mass
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">Q = Charge
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">r = Seperation distance
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">g = Gravitational field strength
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">E = Electric field strength
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">Ep = Potential energy
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">m = Mass
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">q = Charge
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">Fg = Gravitational force
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">Electric force
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">V(esc) = Escape velocity
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">V(orbit) = velocity of orbit
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="formula-container">
+    <div class="row">
+        <div class="col-left">
+            <div id="spaceInduction"></div>
+            <div class="sidecolInduction">
+                <p class="annotation">o = Magnetic flux
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">B = Magnitude of magnetic field
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">A = Area of coil
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">N = Number of turns
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">t = Time elapsed
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">v = Speed of wire
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">l = Length of wire
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+            </div>
+            <div id="spacetransmission"></div>
+            <div class="sidecoltransmission">
+                <p class="annotation">I(rms) = Effective current
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">I0 = Maximum current
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">V(rms) = Effective pd
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">V0 = Maximum pd
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">R = Resistance
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">P(max) = Maximum power dissipated
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">P = Power dissipated
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">E = Emf
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">N = Number of turns
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">p/s = Primary/secondary
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+            </div>
+            <div id="spacewithradiation"></div>
+            <div class="sidecolwithradiation">
+                <p class="annotation">E = Energy
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">h = Planck's constant
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">f = Frequency
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">o = Work function
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">n = State of atom
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">m = Mass
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">v = Velocity
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">r = Radius
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">w = Wave function
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">V = Volume
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">x = Position
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">p = Momentum
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">t = Time
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="midcol">
+            <img src="annotated-physics-data-booklet-2016 (1)/annotated-physics-data-booklet-2016 (1)-14.png">
+            <hr>
+        </div>
+        <div class="col-right">
+            <div id="spaceCapacitance"></div>
+            <div class="sidecolCapacitance">
+                <p class="annotation">C = Capacitance
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">q = Charge
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">V = Potential (difference)
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">E = Permitivity of dielectric material
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">A = Area of plates
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">d = Seperation of plates
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">E = Energy stored
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">T = Time constant
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">R = Resistance
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">q0 = Original charge
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">t = Time elapsed
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">I = current
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">I0 = Initial maximum current
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">V0 = Initial maximum potential difference
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+            </div>
+            <div id="spaceNuclearphysics"></div>
+            <div class="sidecolNuclearphysics">
+                <p class="annotation">R = Nuclear radius
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">R0 = Fermi radius (constant)
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">A = Atomic mass number
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">N = Number of nuclei
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">N0 = Original number of nuclei
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">A = Activity
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">lambda = Decay constant
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">theta = Angle of first minimum
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">lambda = De Brogile wavelength
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+                <p class="annotation">D = Diameter of circular object
+                    <span>
+                    <b id="bullet">Unavailable</b> <b></b><br>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="formula-container">
+    <div class="row">
+        <div class="midcol">
+            <img src="annotated-physics-data-booklet-2016 (1)/annotated-physics-data-booklet-2016 (1)-15.png">
+        </div>
+    </div>
+</section>
+
+<section class="formula-container">
+    <div class="row">
+        <div class="midcol">
+            <img src="annotated-physics-data-booklet-2016 (1)/annotated-physics-data-booklet-2016 (1)-16.png">
+        </div>
+    </div>
+</section>
+
+<section class="formula-container">
+    <div class="row">
+        <div class="midcol">
+            <img src="annotated-physics-data-booklet-2016 (1)/annotated-physics-data-booklet-2016 (1)-17.png">
+        </div>
+    </div>
+</section>
+
+
+<!-- ---------footer------- -->
+<section class="footer">
+    <div class="footerContainer">
+      <h4>PhysicsBuddy: Ace Your Physics Journey!</h4>
+      <div class="footerNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pastpaper.html"><span>Past Paper</span></a></li>
+          <li><a href="revisionvillageclone/revisionvillage.html"><span>RevisionVillage</span></a></li>
+          <li><a href="savemyexam.html"><span>SaveMyExam notes</span></a></li>
+          <li><a href="litcharts.html"><span>LitCharts</span></a></li>
+          <li><a href="bookletphysics.html">Ultimate formula booklet</a></li>
+          <li><a href="studyguide.html">Study guides</a></li>
+        </ul>
+      </div>
+      <div class="icons">
+        <a href="https://www.facebook.com/profile.php?id=100094756256092"><i class="fa fa-brands fa-facebook"></i></a>
+        <a href="mailto:huy.b.huynh0724@ais.edu.vn"><i class="fa fa-solid fa-envelope"></i></a>
+      </div>
+      <div class="footerBottom">
+        <p>Copyright &copy;2023; Made by <span class=Designer><a href="">dESHign</a>; contents by DP2 students</span></p>
+      </div>
+      <div class="visitorcounter">
+        <a href='https://www.free-counters.org/'>https://www.Free-Counters.org</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=ab8a62d513c489f495189d369840764484b2d53a'></script>
+        <script type="text/javascript" src="https://freevisitorcounters.com/en/home/counter/1103967/t/1"></script>
+      </div>
+    </div>
+  </section>
+
+<script src="script.js"></script>
+<script>
+    var annotations = document.getElementsByClassName("annotation")
+    var annotate = document.querySelector("#annotate");
+
+    function annotationswitch() {
+        console.log(annotate.checked)
+        if(annotate.checked == false){
+            for (annotation of annotations) {
+                annotation.style.display = "none";
+            }
+        } else {
+            for (annotation of annotations) {
+                annotation.style.display = "block";
+            }
+        }
+    }
+
+
+</script>
+
+<!-- Messenger Chat Plugin Code -->
+<div id="fb-root"></div>
+
+<!-- Your Chat Plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "101465626374786");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v17.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+</body>
+
+</html>
