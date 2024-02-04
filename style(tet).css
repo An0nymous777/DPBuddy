@@ -205,16 +205,17 @@
 
   .header .set {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     top: 0; 
     left: 0;
-    overflow: hidden;
+    overflow: visible;
   }
   .header .set div{
     position: absolute;
     display: block;
     overflow: hidden;
+    z-index: 10;
   }
   .header .set div img{
     width: 45px;
@@ -286,14 +287,20 @@
       transform: translateX(-20px) rotate(225deg);
     }
   }
-  .set2{
+  .set2 {
     transform: scale(2) rotateY(180deg);
     filter: blur(2px);
+    z-index: 0;
   }
-  .set3{
+  .set3 {
     transform: scale(0.8) rotateY(180deg);
     filter: blur(4px);
   }
+  .set4 {
+    transform: scale(0.6) rotateY(180deg);
+    filter: blur(5px);
+  }
+
 
   nav {
     display: flex;
@@ -336,7 +343,7 @@
   }
 
   nav img {
-    width: 150px;
+    width: 100px;
     position: absolute;
     top: 30px;
     left: 15px;
