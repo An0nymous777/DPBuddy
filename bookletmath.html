@@ -66,7 +66,7 @@
     <div class="col-left">
     </div>
     <div class="midcol">
-        <img src="mathbooklet/mathbooklet-01.png">
+        <img src="mathannotatedbooklet/mathbooklet-01.png">
         <hr>
     </div>
     <div class="col-right">
@@ -78,7 +78,7 @@
     <div class="col-left">
     </div>
     <div class="midcol">
-        <img src="mathbooklet/mathbooklet-03.png">
+        <img src="mathannotatedbooklet/mathbooklet-03.png">
         <hr>
     </div>
     <div class="col-right">
@@ -89,7 +89,7 @@
     <div class="col-left">
     </div>
     <div class="midcol">
-        <img src="mathbooklet/mathbooklet-04.png">
+        <img src="mathannotatedbooklet/mathbooklet-04.png">
         <hr>
     </div>
     <div class="col-right">
@@ -100,7 +100,7 @@
     <div class="col-left">
     </div>
     <div class="midcol">
-        <img src="mathbooklet/mathbooklet-05.png">
+        <img src="mathannotatedbooklet/mathbooklet-05.png">
         <hr>
     </div>
     <div class="col-right">
@@ -111,7 +111,7 @@
     <div class="col-left">
     </div>
     <div class="midcol">
-        <img src="mathbooklet/mathbooklet-06.png">
+        <img src="mathannotatedbooklet/mathbooklet-06.png">
         <hr>
     </div>
     <div class="col-right">
@@ -122,7 +122,7 @@
     <div class="col-left">
     </div>
     <div class="midcol">
-        <img src="mathbooklet/mathbooklet-07.png">
+        <img src="mathannotatedbooklet/mathbooklet-07.png">
         <hr>
     </div>
     <div class="col-right">
@@ -133,7 +133,7 @@
     <div class="col-left">
     </div>
     <div class="midcol">
-        <img src="mathbooklet/mathbooklet-08.png">
+        <img src="mathannotatedbooklet/mathbooklet-08.png">
         <hr>
     </div>
     <div class="col-right">
@@ -144,7 +144,7 @@
     <div class="col-left">
     </div>
     <div class="midcol">
-        <img src="mathbooklet/mathbooklet-09.png">
+        <img src="mathannotatedbooklet/mathbooklet-09.png">
         <hr>
     </div>
     <div class="col-right">
@@ -155,7 +155,7 @@
     <div class="col-left">
     </div>
     <div class="midcol">
-        <img src="mathbooklet/mathbooklet-10.png">
+        <img src="mathannotatedbooklet/mathbooklet-10.png">
         <hr>
     </div>
     <div class="col-right">
@@ -166,7 +166,7 @@
     <div class="col-left">
     </div>
     <div class="midcol">
-        <img src="mathbooklet/mathbooklet-11.png">
+        <img src="mathannotatedbooklet/mathbooklet-11.png">
         <hr>
     </div>
     <div class="col-right">
@@ -177,7 +177,7 @@
     <div class="col-left">
     </div>
     <div class="midcol">
-        <img src="mathbooklet/mathbooklet-12.png">
+        <img src="mathannotatedbooklet/mathbooklet-12.png">
         <hr>
     </div>
     <div class="col-right">
@@ -188,7 +188,7 @@
     <div class="col-left">
     </div>
     <div class="midcol">
-        <img src="mathbooklet/mathbooklet-13.png">
+        <img src="mathannotatedbooklet/mathbooklet-13.png">
         <hr>
     </div>
     <div class="col-right">
@@ -226,22 +226,39 @@
   </section>
 
 <script src="script.js"></script>
-<script>
-    var annotations = document.getElementsByClassName("annotation")
-    var annotate = document.querySelector("#annotate");
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+    var annotate = document.querySelector("#annotate");
     function annotationswitch() {
-        console.log(annotate.checked)
         if(annotate.checked == false){
-            for (annotation of annotations) {
-                annotation.style.display = "none";
-            }
+            var img = $(".formula-container img").each(function() { // for each img found
+            var src = $(this).attr("src"); // get the src
+            var path = src.substring(0,src.lastIndexOf('/')); // get the path from the src
+            console.log(path) 
+            var fileName = src.substring(src.lastIndexOf('/'));
+            console.log(fileName)  // and filename
+            var newSrc = "mathbooklet"+fileName; // re-assemble   
+            // or change filename:
+            // var newSrc = path+"/"+fileName.replace(".jpg","-large.jpg"); // re-assemble   
+        
+            $(this).attr("src",newSrc);
+            });
         } else {
-            for (annotation of annotations) {
-                annotation.style.display = "block";
-            }
+            var img = $(".formula-container img").each(function() { // for each img found
+                var src = $(this).attr("src"); // get the src
+                var path = src.substring(0,src.lastIndexOf('/')); // get the path from the src
+                console.log(path) 
+                var fileName = src.substring(src.lastIndexOf('/'));
+                console.log(fileName)  // and filename
+                var newSrc = "mathannotatedbooklet"+fileName; // re-assemble   
+                // or change filename:
+                // var newSrc = path+"/"+fileName.replace(".jpg","-large.jpg"); // re-assemble   
+            
+                $(this).attr("src",newSrc);
+                });
         }
-    }
+      };
 
 
 </script>
