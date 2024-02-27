@@ -142,6 +142,22 @@
     }
   }
 
+  @media(max-width: 1300px){
+    .tiger {
+      width: 500px;
+    }
+  }
+  @media(max-width: 900px){
+    .tiger {
+      width: 400px;
+    }
+  }
+  @media(max-width: 730px){
+    .tiger {
+      width: 350px;
+    }
+  }
+
   .smallh1{
     display: none;
   }
