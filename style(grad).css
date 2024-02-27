@@ -281,11 +281,6 @@
       transform: translateX(-20px) rotate(225deg);
     }
   }
-  .set2 {
-    transform: scale(2) rotateY(180deg);
-    filter: blur(2px);
-    z-index: 0;
-  }
   .set3 {
     transform: scale(0.8) rotateY(180deg);
     filter: blur(4px);
