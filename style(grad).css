@@ -112,7 +112,7 @@
   } */
   .tiger{
     position: absolute;
-    width: 700px;
+    width: 35vw;
     height: auto;
     bottom: 10vh;
     left: 0;
@@ -139,27 +139,6 @@
     }
     100%{
       transform: translateX(100vw) translateY(-50px);
-    }
-  }
-
-  @media(max-width: 1470px){
-    .tiger {
-      width: 620px;
-    }
-  }
-  @media(max-width: 1300px){
-    .tiger {
-      width: 500px;
-    }
-  }
-  @media(max-width: 900px){
-    .tiger {
-      width: 400px;
-    }
-  }
-  @media(max-width: 730px){
-    .tiger {
-      width: 350px;
     }
   }
 
