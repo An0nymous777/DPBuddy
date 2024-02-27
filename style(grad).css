@@ -182,7 +182,7 @@
     z-index: 10;
   }
   .header .set div img{
-    width: 77px;
+    width: 4vw;
     overflow: hidden;
   }
   .header .set div:nth-child(1){
