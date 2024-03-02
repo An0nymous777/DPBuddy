@@ -13,13 +13,11 @@
     width: 100%
   }
 
-  
   hr {
     width: 70%;
     margin: auto;
     border-top: 2spx solid #00818F;
   }
-  
   
   .material-symbols-outlined {
     font-variation-settings:d
@@ -110,9 +108,30 @@
     animation: movesanta 8s ease-in-out infinite;
     overflow-x: hidden;
   } */
+  #countdown, .countdown {
+    font-size: 30px;
+    margin: 0;
+  }
+  #countdown{
+    color: #F9F871;
+  }
+  @media(max-width: 840px){
+    #countdown, .countdown{
+      font-size: 20px;
+    }
+  }
+
+  .countdowncontainer {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -100px;
+  }
   .tiger{
     position: absolute;
-    width: 40vw;
+    width: 35vw;
     height: auto;
     bottom: 10vh;
     left: 0;
