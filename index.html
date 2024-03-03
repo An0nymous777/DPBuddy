@@ -102,7 +102,8 @@
       // If the count down is finished, write some text
       if (distance < 0) {
         clearInterval(x);
-        document.getElementById("countdown").innerHTML = "THE TIME IS UP - GOOD LUCK EVERYONE";
+        document.getElementById("countdown").innerHTML = "GOOD LUCK EVERYONE";
+        document.getElementByClassName("countdown").innerHTML = "";
       }
     }, 1000);
     </script>
