@@ -123,6 +123,7 @@
     font-size: 20px;
     color: #F9F871;
     position: relative;
+    white-space: nowrap;
   }
   #countdown{
     color: #F9F871;
