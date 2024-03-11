@@ -7,6 +7,7 @@
 
   body{
     overflow-x: hidden;
+    opacity: 0;
   }
   
   .midcol hr {
@@ -112,6 +113,18 @@
     font-size: 30px;
     margin: 0;
   }
+  .countdown .lower {
+    font-size: 20px;
+    color: #F9F871;
+  }
+
+  .countdown .lower::after{
+    content: "Click here to send me gift";
+    position: absolute;
+    right: 0;
+    top: 60px;
+  }
+
   #countdown{
     color: #F9F871;
   }
@@ -896,7 +909,6 @@
     text-align:center;
     padding: 10px 10px;
   }
-
   
   .pastpaper .container .box-container .box embed, .pastpaper .container .box-container .box iframe{
     width: 90%

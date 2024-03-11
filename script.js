@@ -53,8 +53,8 @@ function goback() {
 
 
 // ----------annoucement--------
-const closeModalButtons = document.querySelectorAll('[data-close-button]')
-const overlay = document.getElementById('overlay')
+const closeModalButtons = document.querySelectorAll('[data-close-button]');
+const overlay = document.getElementById('overlay');
 
 overlay.addEventListener('click', () => {
     const modals = document.querySelectorAll('.modal.active')
@@ -74,4 +74,22 @@ function closeModal(modal){
     if (modal==null) return
     modal.classList.remove('active')
     overlay.classList.remove('active')
+    confetti();
 }
+
+// -------------wait video to load---------------
+var video = document.querySelector(".back-video");
+video.load();
+video.addEventListener('loadeddata', function() {
+    console.log("work");
+    document.body.style.opacity = "1";
+}, false);
+// video.onload = function() {
+//     alert("Browser has loaded the current frame");
+//     console.log("work");
+// }
+
+document.body.onload = function() {
+    console.log("hello");
+}
+
