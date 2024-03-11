@@ -71,25 +71,21 @@ closeModalButtons.forEach(button => {
 })
 
 function closeModal(modal){
+    
+    document.body.style.overflowY = "scroll";
     if (modal==null) return
-    modal.classList.remove('active')
-    overlay.classList.remove('active')
+    modal.classList.remove('active');
+    overlay.classList.remove('active');
     confetti();
 }
 
 // -------------wait video to load---------------
 var video = document.querySelector(".back-video");
+var pagebody = document.querySelectorAll(".section");
 video.load();
 video.addEventListener('loadeddata', function() {
     console.log("work");
-    document.body.style.opacity = "1";
+    for (const section of pagebody) {
+        section.style.opacity = "1";
+    }
 }, false);
-// video.onload = function() {
-//     alert("Browser has loaded the current frame");
-//     console.log("work");
-// }
-
-document.body.onload = function() {
-    console.log("hello");
-}
-

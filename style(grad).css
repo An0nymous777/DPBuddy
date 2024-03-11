@@ -7,7 +7,8 @@
 
   body{
     overflow-x: hidden;
-    opacity: 0;
+    opacity: 1;
+    overflow-y: hidden;
   }
   
   .midcol hr {
@@ -50,6 +51,11 @@
     z-index: -10;
     overflow: hidden;
   }
+  .section {
+    opacity: 0;
+  }
+
+
   .header .tree{
     content: '';
     position: absolute;
@@ -116,18 +122,21 @@
   .countdown .lower {
     font-size: 20px;
     color: #F9F871;
+    position: relative;
   }
-
-  .countdown .lower::after{
-    content: "Click here to send me gift";
-    position: absolute;
-    right: 0;
-    top: 60px;
-  }
-
   #countdown{
     color: #F9F871;
   }
+  .clickable{
+    width: 80px;
+    height: auto;
+    transform: rotate(-60deg);
+    position: absolute;
+    top:4px;
+    right: 0;
+  }
+  
+
   @media(max-width: 840px){
     #countdown, .countdown{
       font-size: 20px;
@@ -408,7 +417,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
+    z-index: 0;
     text-align: center;
   }
   
@@ -1336,7 +1345,7 @@
   transition: 200ms ease-in-out;
   border: 1px black solid;
   border-radius: 10px;
-  z-index: 10;
+  z-index: 10000;
   background-color: white;
   width: 500px;
   max-width: 80%;
