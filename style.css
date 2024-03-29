@@ -9,13 +9,9 @@ body{
   overflow-x: hidden;
 }
 
-
-
 .midcol hr {
   width: 100%
 }
-
-
 hr {
   width: 70%;
   margin: auto;
@@ -594,7 +590,7 @@ nav .material-symbols-outlined {
 
 .resources .container .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
   gap: 15px;
 }
 
@@ -604,6 +600,7 @@ nav .material-symbols-outlined {
   background: white;
   text-align:center;
   padding: 10px 10px;
+  
 }
 
 
@@ -654,6 +651,12 @@ nav .material-symbols-outlined {
 .pastpaper .container .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+}
+
+.alumni .container .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
   gap: 15px;
 }
 
@@ -751,7 +754,7 @@ nav .material-symbols-outlined {
   }
 }
 
-@media(max-width: 1250px) {
+@media(max-width: 1200px) {
 
   .about-col-1,
   .about-col-2 {
