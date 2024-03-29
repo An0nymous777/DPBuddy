@@ -901,6 +901,9 @@
   .credit p{
     text-align: center;
   }
+  .box-resources h3{
+    color: #dd4330;
+  }
   .resources h3 , .resources p, .resources a{
     font-size: 1px;
   }
