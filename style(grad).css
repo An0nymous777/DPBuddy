@@ -8,7 +8,6 @@
   body{
     overflow-x: hidden;
     opacity: 1;
-    overflow-y: hidden;
   }
   
   .midcol hr {
@@ -116,11 +115,17 @@
     overflow-x: hidden;
   } */
   #countdown, .countdown {
-    font-size: 30px;
+    font-size: 1.7vw;
     margin: 0;
   }
+  @media(max-aspect-ratio: 1/1){
+    #countdown, .countdown {
+      font-size: 20px;
+    }
+  }
+  
+
   .countdown .lower {
-    font-size: 20px;
     color: #F9F871;
     position: relative;
     white-space: nowrap;
@@ -423,7 +428,7 @@
   }
   
   .text-box h1 {
-    font-size: 62px;
+    font-size: 3vw;
     color: #F46C36;
     z-index: 1;
     white-space: nowrap;
@@ -830,59 +835,99 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: 0.2s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  
   .resources .container {
-    padding:15px 9%;
-    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 10px 0;
   }
-  
-  .resources .container .heading {
-    text-align: center;
-    padding-bottom: 15px;
-    color: orange;
-    text-shadow: 0 5px 10px rgba(0,0,0,0.2);
-    font-size: 50;
-  }
-  
-  .resources .container .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 15px;
-  }
-  
-  .resources .container .box-container .box {
+  .resources .box-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    background-color: white;
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-    border-radius: 5px;
-    background: white;
-    text-align:center;
-    padding: 10px 10px;
+    padding: 20px 10px;
+    margin: 10px 0;
   }
 
-  
-  .resources .container .box-container .box embed, .resources .container .box-container .box iframe{
-    width: 90%
+  .resources .container .box-container .credit {
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0 10px;
   }
-  
-  .resources .container .box-container h3{
-    font-size: 22px;
-    padding: 10px 0;
+  .resources .container .box-container .box-resources {
+    flex-basis: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0 10px;
+    border-left: solid 2px black;
   }
-  
-  .resources .container .box-container{
-    font-size: 16px;
-    line-height: 1.8;
+  .resources .container .box-container .box-resources .box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
   }
-  
-  .resources .container .box-container .box .btn {
-    color: #F46C36;
-    font-size: 17px;
-    margin-top: 10px;
-    display: inline-block;
-    margin-bottom: 20px;
-  
+  .resources .container .box-container .box-resources .box h3, .box-resources  p {
+    width: 90%;
+    text-align: left;
+    margin: 0 0;
+  }
+
+  .credit p{
+    text-align: center;
+  }
+  .resources h3 , .resources p, .resources a{
+    font-size: 1px;
+  }
+  .resources p{
+    line-height: 1.5;
+  }
+  /* small device */
+  @media(max-width: 768px){
+    .resources h3 {
+      font-size: 14px;
+    }
+    .resources p, .resources a{
+      font-size: 12px;
+    }
+  }
+  /* medium device */
+  @media(max-width: 1000px){
+    .resources h3 {
+      font-size: 16px;
+    }
+    .resources p, .resources a{
+      font-size: 14px;
+    }
+  }
+   /* medium device */
+   @media(min-width: 1200px){
+    .resources h3 {
+      font-size: 18px;
+    }
+    .resources p, .resources a{
+      font-size: 16px;
+    }
   }
 
   .visitorcounter {
