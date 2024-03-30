@@ -904,11 +904,12 @@
   .box-resources h3{
     color: #dd4330;
   }
-  .resources h3 , .resources p, .resources a{
-    font-size: 1px;
+  .resources h3 {
+    font-size: 17px;
   }
-  .resources p{
+  .resources p, .resources a{
     line-height: 1.5;
+    font-size: 15px;
   }
   /* small device */
   @media(max-width: 768px){
