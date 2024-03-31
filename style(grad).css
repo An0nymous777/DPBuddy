@@ -346,6 +346,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    z-index: 1;
   }
   
   
@@ -363,12 +364,14 @@
     display: none;
   }
   
-  .dropdown:hover .submenu {
+  .dropdown:hover .submenu{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: fit-content;
+    height: fit-content;
   }
   
   .submenu li {
