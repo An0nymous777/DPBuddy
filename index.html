@@ -79,7 +79,7 @@
 
   <div class="text-box">
     <div class="countdowncontainer">
-      <p class="countdown">Only <span id="countdown"></span> until our final exam!</p>
+      <p class="countdown"><span id="countdown"></p>
     </div>
     <script>
     // Set the date we're counting down to
@@ -100,8 +100,8 @@
       + minutes + "m " + seconds + "s ";
       // If the count down is finished, write some text
       if (distance < 0) {
-        // clearInterval(x);
-        // document.getElementById("countdown").innerHTML = "THE TIME IS UP - GOOD LUCK EVERYONE";
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "45/45 - Go Eagles! Go Seniors!";
       }
     }, 1000);
     </script>
