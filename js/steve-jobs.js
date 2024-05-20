@@ -1,5 +1,20 @@
 /* Steve jobs' book */
 
+
+var w = window.innerWidth;
+var h = window.innerHeight;
+
+function resize() {
+	w = window.innerWidth;
+	h = window.innerHeight;
+	console.log("height: ", h, "px");
+	console.log("width: ", w, "px");
+	if (!((w>=960)&&(h>600))){
+		window.location.href = "turnjs4/index.html";
+  }
+}
+window.onresize = resize;
+
 function updateDepth(book, newPage) {
 
 	var page = book.turn('page'),
