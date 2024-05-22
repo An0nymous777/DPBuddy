@@ -1,21 +1,25 @@
 /* Steve jobs' book */
 
-
+var screentype = 'double';
 var w = window.innerWidth;
 var h = window.innerHeight;
+var insidew = 460;
+var insideh = 649;
+var adjustw=480;
+var adjusth=669;
 
 function resize() {
-	w = window.innerWidth;
-	h = window.innerHeight;
-	console.log("height: ", h, "px");
-	console.log("width: ", w, "px");
-	if (!((w>=960)&&(h>600))){
-		window.location.href = "turnjs4/index.html";
-  }
-}
+	location.reload();
+	
+}	
 window.onresize = resize;
 
 function updateDepth(book, newPage) {
+	var shiftvalue = 20;
+
+	// if (w<1150){
+	// 	shiftvalue = 25;
+	// }
 
 	var page = book.turn('page'),
 		pages = book.turn('pages'),
@@ -23,10 +27,18 @@ function updateDepth(book, newPage) {
 
 		newPage = newPage || page;
 
+	if ((newPage>3)&&screentype=="single") {
+		document.querySelector('.p31').style.display = "block";
+	} 
+
+	if ((newPage<pages-3)&&screentype=="single") {
+		document.querySelector('.p31').style.display = "none";
+	}
+
 	if (newPage>3)
 		$('.sj-book .p2 .depth').css({
 			width: depthWidth,
-			left: 20 - depthWidth
+			left: shiftvalue - depthWidth
 		});
 	else
 		$('.sj-book .p2 .depth').css({width: 0});
@@ -36,7 +48,7 @@ function updateDepth(book, newPage) {
 	if (newPage<pages-3)
 		$('.sj-book .p31 .depth').css({
 			width: depthWidth,
-			right: 20 - depthWidth
+			right: shiftvalue - depthWidth
 		});
 	else
 		$('.sj-book .p31 .depth').css({width: 0});
@@ -60,9 +72,10 @@ function addPage(page, book) {
 
 		var element = $('<div />',
 			{'class': 'own-size',
-				css: {width: 460, height: 582}
+				css: {width: insidew, height: insideh}
 			}).
-			html('<div class="loader"></div>');
+
+			html('<div class="gradient"></div><div class="loader"></div>');
 
 		if (book.turn('addPage', element, page)) {
 			loadPage(page);

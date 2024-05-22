@@ -17,9 +17,13 @@
 	<div id="book-zoom">
 		<div class="sj-book">
 			<div depth="5" class="hard"> <div class="side"></div> </div>
-			<div depth="5" class="hard front-side"> <div class="depth"></div> </div>
-			<div class="own-size"></div>
-			<div class="own-size even"></div>
+			<div id="secondpage" depth="5" class=" front-side"> <div class="depth"></div> </div>
+			<div class="own-size">
+				<div class="gradient"></div>
+			</div>
+			<div class="own-size even">
+				<div class="gradient"></div>
+			</div>
 			<div class="hard fixed back-side p31"> <div class="depth"></div> </div>
 			<div class="hard p32"></div>
 		</div>
@@ -33,11 +37,53 @@
 <script type="text/javascript">
 
 function loadApp() {
+	var screentypescale = 1;
 
 	var w = window.innerWidth;
 	var h = window.innerHeight;
+	 
+	if ((w<1150)&&((w/h < 2/1.41))){
+		screentype = 'single';
+		screentypescale = 0.5;
+		document.querySelector('.p31').classList.remove('hard');
+
+	}
+
+	console.log("height: ", h, "px");
+	console.log("width: ", w, "px");
 	
-	if ((w>=960)&&(h>600)){
+	if ((w/h > 2/1.41) || screentype=="single") {
+		adjustw=(((h*0.8)*2)/1.41)*screentypescale;
+		adjusth=(h*0.8);
+		document.documentElement.style.setProperty("--bookh", adjusth.toString()+"px");
+		document.documentElement.style.setProperty("--bookw", adjustw.toString()+"px");
+		document.documentElement.style.setProperty("--bookwhalf", (adjustw/2).toString()+"px");
+		insidew = (adjustw/2)-20;
+		insideh = adjusth-20;
+		document.documentElement.style.setProperty("--insidew", insidew.toString()+"px");
+		document.documentElement.style.setProperty("--insideh", insideh.toString()+"px");
+		document.documentElement.style.setProperty("--depthw", (insidew*(16/460)).toString()+"px");
+		document.documentElement.style.setProperty("--depthh", (insideh+(insideh*(15/657))).toString()+"px");
+		document.documentElement.style.setProperty("--depthtop", (insideh*(2/657)).toString()+"px");
+	}
+	else if ((w/h < 2/1.41) && screentype=="double"){
+		adjustw=(w*0.8)*screentypescale;
+		adjusth=((w*0.8)*(1.41)/2);
+		document.documentElement.style.setProperty("--bookh", adjusth.toString()+"px");
+		document.documentElement.style.setProperty("--bookw", adjustw.toString()+"px");
+		document.documentElement.style.setProperty("--bookwhalf", (adjustw/2).toString()+"px");
+		insidew = (adjustw/2)-20;
+		insideh = adjusth-20;
+		document.documentElement.style.setProperty("--insidew", insidew.toString()+"px");
+		document.documentElement.style.setProperty("--insideh", insideh.toString()+"px");
+		document.documentElement.style.setProperty("--depthw", (((w*0.8)/2)*(16/480)).toString()+"px");
+		document.documentElement.style.setProperty("--depthh", (insideh+(insideh*(8/657))).toString()+"px");
+		document.documentElement.style.setProperty("--depthtop", (insideh*(7/657)).toString()+"px");
+	}
+	
+
+
+	if (w>0){
 		var flipbook = $('.sj-book');
 
 		// Check if the CSS was already loaded
@@ -166,6 +212,7 @@ function loadApp() {
 		flipbook.bind(($.isTouch) ? 'touchend' : 'click', zoomHandle);
 
 		flipbook.turn({
+			display: screentype,
 			elevation: 50,
 			acceleration: !isChrome(),
 			autoCenter: true,
@@ -276,7 +323,7 @@ function loadApp() {
 		$('#canvas').css({visibility: ''});
 	}
 	else {
-		window.location.href = "turnjs4/index.html";
+		window.location.href = "turnjs4/index.html"
 	}
 	
 }

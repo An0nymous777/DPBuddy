@@ -1,5 +1,9 @@
 /* Steve jobs' book */
 
+/* body{
+	zoom: 1.2;
+} */
+
 @font-face {
   font-family: 'Stempel-Garamond-W01-Roman';
   font-style: normal;
@@ -9,8 +13,13 @@
 
 :root {
 	--bookw: 960px;
-	--bookh: 600px;
-	--bookwhalf: 480px;
+	--bookh: 669px;
+	--bookwhalf: 680px;
+	--insidew: 460px;
+	--insideh: 649px;
+	--depthw: 16px;
+	--depthh:657px;
+	--depthtop: 7px;
 }
 
 
@@ -19,7 +28,11 @@ body {
 	background-position: center;
   	background-repeat: no-repeat;
   	background-size: cover;
+	/* background-color: white; */
 	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 body::after{
 	content: "";
@@ -88,8 +101,9 @@ body, ul, table, form{
 .sj-book .book-content{
 	font-family: "Stempel-Garamond-W01-Roman";
 	font-size:16px;
-	
 	background-color: #00b4d8;
+	width: 100%;
+	height: 100%;
 }
 
 .sj-book blockquote{
@@ -169,6 +183,7 @@ body, ul, table, form{
 	-ms-box-shadow:0 0 20px rgba(0,0,0,0.2);
 	-o-box-shadow:0 0 20px rgba(0,0,0,0.2);
 	box-shadow:0 0 20px rgba(0,0,0,0.2);
+	background-color: white;
 }
 
 .zoom-pic{
@@ -238,9 +253,10 @@ body, ul, table, form{
 .sj-book .depth{
 	background-image:url(../pics/pages-depth.png);
 	position:absolute;
-	top:7px;
-	width:16px;
-	height:590px;
+	top:var(--depthtop);
+	width:var(--depthw);
+	height:var(--depthh);
+	background-size: cover;
 }
 
 .sj-book .front-side .depth{
@@ -270,8 +286,14 @@ body, ul, table, form{
 	background-position:-1440px 0 !important;
 }
 
+.p4 {
+	background-image: url('../Yrbook2024/L4.png');
+	background-size: cover;
+	background-position: center;
+}
+
 .sj-book .hard{
-	width:480px;
+	width: var(--bookwhalf);
 	height:var(--bookh);
 	background-color:#00b4d8;
 	-webkit-box-shadow:none;
@@ -288,12 +310,13 @@ body, ul, table, form{
 }
 
 .sj-book .own-size{
-	width:460px;
-	height:582px;
+	width:var(--insidew);
+	height:var(--insideh);
+	/*  decide color */
 	background-color:black;
 	overflow:hidden;
 }
-
+/* 
 .sj-book .even{
 	background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
 	background-image:-webkit-linear-gradient(left, #fff 95%, #dadada 100%);
@@ -310,6 +333,55 @@ body, ul, table, form{
 	background-image:-ms-linear-gradient(right, #fff 95%, #cacaca 100%);
 	background-image:-o-linear-gradient(right, #fff 95%, #cacaca 100%);
 	background-image:linear-gradient(right, #fff 95%, #cacaca 100%);
+}
+ */
+ .sj-book .gradient{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index: 100000000;
+
+	background:-webkit-gradient(linear, right top, left top, color-stop(0.95, rgba(0,0,0,0)), color-stop(1, rgba(0,0,0,0.8)));
+	background-image:-webkit-linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.85) 100%);
+	background-image:-moz-linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.85) 100%);
+	background-image:-ms-linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.85) 100%);
+	background-image:-o-linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.85) 100%);
+	background-image:linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.85) 100%);
+}
+
+.sj-book  .even .gradient{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index: 100000000;
+	background-color: black;
+
+	background:-webkit-gradient(linear, left top, right top, color-stop(0.95, rgba(0,0,0,0)), color-stop(1, rgba(0,0,0,0.2)));
+	background-image:-webkit-linear-gradient(left, rgba(0,0,0,0) 95%, rgba(0,0,0,0.8) 100%);
+	background-image:-moz-linear-gradient(left, rgba(0,0,0,0) 95%, rgba(0,0,0,0.8) 100%);
+	background-image:-ms-linear-gradient(left, rgba(0,0,0,0) 95%, rgba(0,0,0,0.8) 100%);
+	background-image:-o-linear-gradient(left, rgba(0,0,0,0) 95%, rgba(0,0,0,0.8) 100%);
+	background-image:linear-gradient(left, rgba(0,0,0,0) 95%, rgba(0,0,0,0.8) 100%);
+}
+
+.sj-book .odd .gradient{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index: 100000000;
+
+	background:-webkit-gradient(linear, right top, left top, color-stop(0.95, rgba(0,0,0,0)), color-stop(1, rgba(0,0,0,0.8)));
+	background-image:-webkit-linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.85) 100%);
+	background-image:-moz-linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.85) 100%);
+	background-image:-ms-linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.85) 100%);
+	background-image:-o-linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.85) 100%);
+	background-image:linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.85) 100%);
 }
 
 .sj-book .loader{
@@ -403,6 +475,7 @@ body, ul, table, form{
 .book-content img{
 	width: 100%;
 	height: 100%;
+	z-index: -100000000;
 }
 
 .book-content .liveimage{
