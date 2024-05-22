@@ -22,6 +22,12 @@
 	--depthtop: 7px;
 }
 
+html, body {
+	overflow-x: hidden;
+	overflow-y: hidden;
+	height: 100vh;
+	width: 100vw;
+  }
 
 body {
 	background-image: url('../pics/aisvn.jpg');
@@ -29,9 +35,7 @@ body {
   	background-repeat: no-repeat;
   	background-size: cover;
 	/* background-color: white; */
-	height: 100vh;
-	width: 100vw;
-	overflow: hidden;
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -65,7 +69,6 @@ body, ul, table, form{
 #canvas{
 	width: var(--bookw);
 	height: var(--bookh);
-	margin: 100px auto;
 }
 
 #book-zoom{
