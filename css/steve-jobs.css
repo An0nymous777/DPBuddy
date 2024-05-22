@@ -209,17 +209,10 @@ body, ul, table, form{
 	box-shadow:0 0 20px #999;
 }
 
-.sj-book .p1,
-.sj-book .p2,
-.sj-book .p3, 
-.sj-book .p31, 
-.sj-book .p32{
-	background-color:#00b4d8;
-	background-image:url(../pics/book-covers.jpg) !important;
-}
-
 .sj-book .p1{
-	background-position:0 0;
+	background-image: url('../Yrbook2024/front.jpg');
+	background-size: cover;
+	background-position: center;
 }
 
 .sj-book .p1 .side{
@@ -276,23 +269,31 @@ body, ul, table, form{
 
 
 .sj-book .p2{
-	background-position:-480px 0 !important;
+	background-image: url('../Yrbook2024/page1.jpg');
+	background-size: cover;
+	background-position: center;
 }
 
 .sj-book .p3{
-	background-position:-1920px 0 !important;
+	background-image: url('../Yrbook2024/page2.jpg');
+	background-size: cover;
+	background-position: center;
 }
 
 .sj-book .p31{
-	background-position:-960px 0 !important;
+	background-image: url('../Yrbook2024/page31.jpg');
+	background-size: cover;
+	background-position: center;
 }
 
 .sj-book .p32{
-	background-position:-1440px 0 !important;
+	background-image: url('../Yrbook2024/page32.jpg');
+	background-size: cover;
+	background-position: center;
 }
 
 .p4 {
-	background-image: url('../Yrbook2024/L4.png');
+	background-image: url('../Yrbook2024/image1.jpg');
 	background-size: cover;
 	background-position: center;
 }
@@ -349,11 +350,11 @@ body, ul, table, form{
 	z-index: 100000000;
 
 	background:-webkit-gradient(linear, right top, left top, color-stop(0.95, rgba(0,0,0,0)), color-stop(1, rgba(0,0,0,0.8)));
-	background-image:-webkit-linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.85) 100%);
-	background-image:-moz-linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.85) 100%);
-	background-image:-ms-linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.85) 100%);
-	background-image:-o-linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.85) 100%);
-	background-image:linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.85) 100%);
+	background-image:-webkit-linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.3) 100%);
+	background-image:-moz-linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.3) 100%);
+	background-image:-ms-linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.3) 100%);
+	background-image:-o-linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.3) 100%);
+	background-image:linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.3) 100%);
 }
 
 .sj-book  .even .gradient{
@@ -366,11 +367,11 @@ body, ul, table, form{
 	background-color: black;
 
 	background:-webkit-gradient(linear, left top, right top, color-stop(0.95, rgba(0,0,0,0)), color-stop(1, rgba(0,0,0,0.2)));
-	background-image:-webkit-linear-gradient(left, rgba(0,0,0,0) 95%, rgba(0,0,0,0.8) 100%);
-	background-image:-moz-linear-gradient(left, rgba(0,0,0,0) 95%, rgba(0,0,0,0.8) 100%);
-	background-image:-ms-linear-gradient(left, rgba(0,0,0,0) 95%, rgba(0,0,0,0.8) 100%);
-	background-image:-o-linear-gradient(left, rgba(0,0,0,0) 95%, rgba(0,0,0,0.8) 100%);
-	background-image:linear-gradient(left, rgba(0,0,0,0) 95%, rgba(0,0,0,0.8) 100%);
+	background-image:-webkit-linear-gradient(left, rgba(0,0,0,0) 95%, rgba(0,0,0,0.4) 100%);
+	background-image:-moz-linear-gradient(left, rgba(0,0,0,0) 95%, rgba(0,0,0,0.4) 100%);
+	background-image:-ms-linear-gradient(left, rgba(0,0,0,0) 95%, rgba(0,0,0,0.4) 100%);
+	background-image:-o-linear-gradient(left, rgba(0,0,0,0) 95%, rgba(0,0,0,0.4) 100%);
+	background-image:linear-gradient(left, rgba(0,0,0,0) 95%, rgba(0,0,0,0.4) 100%);
 }
 
 .sj-book .odd .gradient{
@@ -382,11 +383,11 @@ body, ul, table, form{
 	z-index: 100000000;
 
 	background:-webkit-gradient(linear, right top, left top, color-stop(0.95, rgba(0,0,0,0)), color-stop(1, rgba(0,0,0,0.8)));
-	background-image:-webkit-linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.85) 100%);
-	background-image:-moz-linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.85) 100%);
-	background-image:-ms-linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.85) 100%);
-	background-image:-o-linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.85) 100%);
-	background-image:linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.85) 100%);
+	background-image:-webkit-linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.3) 100%);
+	background-image:-moz-linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.3) 100%);
+	background-image:-ms-linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.3) 100%);
+	background-image:-o-linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.3) 100%);
+	background-image:linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.3) 100%);
 }
 
 .sj-book .loader{
