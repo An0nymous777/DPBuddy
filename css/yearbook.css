@@ -556,6 +556,7 @@ body, ul, table, form{
 	transform: translateX(100%);
 	animation: instruction 10s ease-in-out infinite;
 	animation-delay: 1.2s;
+	opacity: 0;
 }
 
 .p1::before{
@@ -566,7 +567,6 @@ body, ul, table, form{
 	z-index: 10000000000;
 	width: 20%;
 	height: 15%;
-	opacity: 0;
 	background-image: url('../pics/arrow.gif');
 	background-position: center;
 	background-size: cover;
