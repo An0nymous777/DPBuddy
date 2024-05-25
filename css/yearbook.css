@@ -541,3 +541,89 @@ body, ul, table, form{
 }
 
 
+/* Instruction */
+.p1::after{
+	content: "";
+	position: absolute;
+	bottom:2%;
+	right:0;
+	z-index: 10000000000;
+	width: 45%;
+	height: 23%;
+	background-image: url('../pics/instructionpage.png');
+	background-position: center;
+	background-size: cover;
+	transform: translateX(100%);
+	animation: instruction 10s ease-in-out infinite;
+	animation-delay: 1.2s;
+}
+
+.p1::before{
+	content: "";
+	position: absolute;
+	bottom:-4%;
+	right:3%;
+	z-index: 10000000000;
+	width: 20%;
+	height: 15%;
+	opacity: 0;
+	background-image: url('../pics/arrow.gif');
+	background-position: center;
+	background-size: cover;
+	transform: scaleY(-1) rotate(-15deg);
+	animation: instructionarrow 10s ease-in-out infinite;
+	animation-delay: 1.2s;
+}
+
+@keyframes instruction {
+	5%{
+		transform: translate(0);
+	}
+	65%{
+		opacity: 1;
+	}
+	69%{
+		transform: translate(0);
+	}
+	70%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+@keyframes instructionarrow{
+	10%{
+		opacity: 1;
+	}
+	69%{
+		opacity: 1;
+	}
+	70%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+.p2::after{
+	content: "";
+	position: absolute;
+	top:0;
+	left:0;
+	width: 85%;
+	height: 100%;
+	background-image: url('../pics/page2instruction.jpg');
+	background-position: left;
+	background-size: cover;
+	opacity: 0;
+	animation: page2instruction 1s forwards;
+}
+@keyframes page2instruction {
+	100%{
+		opacity: 1;
+	}
+}
+
