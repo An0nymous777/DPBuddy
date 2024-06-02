@@ -10,10 +10,55 @@
 <script type="text/javascript" src="Files1/files2/extras/jquery.mousewheel.min.js"></script>
 <script type="text/javascript" src="Files1/files2/extras/modernizr.2.5.3.min.js"></script>
 <script type="text/javascript" src="Files1/files2/lib/hash.js"></script>
+<script src="https://kit.fontawesome.com/3e1b035c34.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
+<div class="navbar">
+	<button class="navbtn" class="share" id="menuBtn"><i class="fa-solid fa-bars"></i>
+		<div class="dropdown">
+			<a href="yearbook.html#page/1">First page</a>
+			<a href="yearbook.html#page/6">Photos & quotes</a>
+			<a>Class memories</a>
+			<a>Event recap</a>
+			<a>Teachers</a>
+			<a >Signature</a>
+		</div>
+	</button>
+	<button class="navbtn" id="backButton"><i class="fa-solid fa-arrow-left"></i></button>
+	<input type="text" id="pageNumber" min="1" placeholder="1">
+	<button class="navbtn" id="nextButton"><i class="fa-solid fa-arrow-right"></i></button>
+	<button class="navbtn" class="download" id="downloadButton"><i class="fa-solid fa-download"></i></button>
+</div>
+	<script>
+		const shareButton = document.getElementById('shareButton');
+		shareButton.addEventListener('click', () => {
+            const url = window.location.href;
+            const title = document.title;
+            const shareText = `Check out pages ${pageNumberInput.value} of the yearbook!`;
 
+            const popupWidth = 600;
+            const popupHeight = 400;
+            const leftPosition = (window.screen.width - popupWidth) / 2;
+            const topPosition = (window.screen.height - popupHeight) / 2;
+
+            const popupOptions = `toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, width=${popupWidth}, height=${popupHeight}, top=${topPosition}, left=${leftPosition}`;
+
+            const popupContent = `<h2>Share Options</h2>
+                                 <p>${shareText}</p>
+                                 <p><strong>URL:</strong> <input type="text" value="${url}" style="width: 100%" readonly></p>
+                                 <p><button onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}', '_blank', '${popupOptions}');">Share on Facebook</button></p>
+                                 <p><button onclick="window.open('https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(shareText)}&via=YourTwitterUsername', '_blank', '${popupOptions}');">Share on Twitter</button></p>`;
+
+            const popupWindow = window.open('', '_blank', popupOptions);
+            popupWindow.document.write(popupContent);
+        });
+	</script>
+</div>
 <div id="canvas">
+	<div class="instruction">
+		<p>That's right! Enjoy the book!</p>
+	</div>
 	<div id="book-zoom">
 		<div class="sj-book">
 			<div depth="5" class="hard"> <div class="side"></div> </div>
@@ -28,9 +73,9 @@
 			<div class="hard p32"></div>
 		</div>
 	</div>
-	<div id="slider-bar" class="turnjs-slider">
+	<!-- <div id="slider-bar" class="turnjs-slider">
 		<div id="slider"></div>
-	</div>
+	</div> -->
 </div>
 
 
@@ -54,6 +99,14 @@ function loadApp() {
 	
 	
 	if (screentype=="single"){
+		try {
+			var instruction = document.querySelector('.instruction');
+			instruction.style.width = "66.5%";
+			instruction.style.left = "17%";
+		  }
+		catch(err) {
+		console.log('failed')
+		}
 		if(w/h>1/1.41){
 			adjustw=(((h*0.95)*2)/1.41)*screentypescale;
 			adjusth=(h*0.95);
@@ -271,19 +324,39 @@ function loadApp() {
 
 			switch (e.keyCode) {
 				case previous:
-
 					$('.sj-book').turn('previous');
 
 				break;
 				case next:
 					
-					$('.sj-book').turn('next');
+				$('.sj-book').turn('next');
 
 				break;
 			}
 
 		});
 
+		//navigation bar
+		document.getElementById('backButton').addEventListener('click', () => {
+            // Add functionality for back button
+            $('.sj-book').turn('previous');
+        });
+
+        document.getElementById('nextButton').addEventListener('click', () => {
+            // Add functionality for next button
+            $('.sj-book').turn('next');
+        });
+		const pageNumberInput = document.getElementById('pageNumber');
+        pageNumberInput.addEventListener('change', (event) => {
+            // Add functionality for page number input
+			$('.sj-book').turn('page', event.target.value)
+            console.log('Page number changed to', event.target.value);
+        });
+
+        document.getElementById('downloadButton').addEventListener('click', () => {
+            // Add functionality for download button
+            console.log('Download button clicked');
+        });
 
 		// Flipbook
 
@@ -296,6 +369,15 @@ function loadApp() {
 			pages: 32,
 			when: {
 				turning: function(e, page, view) {
+					if (page==1){
+						pageNumberInput.value = 1;
+					}
+					else if (page%2==0){
+						pageNumberInput.value = page + "-" + (page+1);
+					}
+					else if (page%2!=0){
+						pageNumberInput.value = (page-1) + "-" + page;
+					}
 					
 					var book = $(this),
 						currentPage = book.turn('page'),
@@ -337,15 +419,37 @@ function loadApp() {
 						$('.sj-book .p31').removeClass('fixed');
 
 					Hash.go('page/'+page).update();
-						
+				
 				},
 
 				turned: function(e, page, view) {
-
 					var book = $(this);
+
+					console.log(page);
 
 					if (page==2 || page==3) {
 						book.turn('peel', 'br');
+						try {
+							var instruction = document.querySelector('.instruction');
+							instruction.style.display ="flex";
+						  }
+						catch(err) {
+						console.log('failed')
+						}
+					}else{
+						try {
+							var instruction = document.querySelector('.instruction');
+							instruction.style.display ="none";
+						  }
+						catch(err) {
+						console.log('failed')
+						}
+					}
+
+					if (page >= 1 && page <= 5){
+						var background = document.body.style.backgroundImage = "url('../pics/library1.jpg')";
+					} else if (page>=6){
+						var background = document.body.style.backgroundImage = "url('../pics/seniorlouge2.jpg')";
 					}
 
 					updateDepth(book);
@@ -354,7 +458,7 @@ function loadApp() {
 
 					book.turn('center');
 					console.log('newpage');
-					reset_animation();
+					//reset_animation();
 				},
 
 				start: function(e, pageObj) {
@@ -376,6 +480,7 @@ function loadApp() {
 					}, 1);
 
 					moveBar(false);
+
 
 				},
 

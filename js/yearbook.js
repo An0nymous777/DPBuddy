@@ -10,26 +10,32 @@ var adjusth=669;
 var depthscaleh = 7;
 var depthscaletop = 8;
 var shiftvalue = 20;
+var turningvar = true;
+
+
 
 function resize() {
 	location.reload();
 }	
 window.onresize = resize;
 
-function reset_animation() {
-	try {
-		var el = document.getElementsByClassName('liveimage');
+// function reset_animation() {
+// 	try {
+// 		var el = document.getElementsByClassName('liveimage');
 		
-		for(i=0; i<el.length; i++){
-			el[i].style.animation = 'none';
-			el[i].offsetHeight;
-			el[i].style.animation = null;
-		 }
-	  }
-	  catch(err) {
-		console.log('failed')
-	  }
-}
+// 		for(i=0; i<el.length; i++){
+// 			el[i].style.opacity = 1;
+// 		}
+// 		setTimeout(function() {
+// 			for(i=0; i<el.length; i++){
+// 				el[i].style.opacity = 0;
+// 			}
+// 		}, 2000);
+// 	  }
+// 	catch(err) {
+// 	console.log('failed')
+// 	}
+// }
 
 function updateDepth(book, newPage) {
 
@@ -50,7 +56,7 @@ function updateDepth(book, newPage) {
 	if (newPage>3)
 		$('.sj-book .p2 .depth').css({
 			width: depthWidth,
-			left: shiftvalue - depthWidth
+			left: shiftvalue - depthWidth,
 		});
 	else
 		$('.sj-book .p2 .depth').css({width: 0});

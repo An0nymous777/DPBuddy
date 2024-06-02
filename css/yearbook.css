@@ -23,15 +23,19 @@ html, body {
   }
 
 body {
-	background-image: url('../pics/aisvn.jpg');
+	background-image: url('../pics/library1.jpg');
 	background-position: center;
   	background-repeat: no-repeat;
   	background-size: cover;
+	animation: introbackground 3s;
 	/* background-color: white; */
 	position: relative;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	-webkit-transition: background-image 0.5s ease-in-out;
+	transition: background-image 0.5s ease-in-out;
 }
 body::after{
 	content: "";
@@ -59,9 +63,95 @@ body, ul, table, form{
 	transition:margin-left 0.2s ease-in-out;
 }
 
+.navbar{
+	display: flex;
+	flex-direction: row;
+	width: 30vw;
+	justify-content: space-between;
+	height: 3%;
+	background-color: rgba(0,0,0,0.6);
+	border-radius: 10px;
+	z-index: 1000000000000000;
+}
+.navbar #pageNumber{
+	width: 10vw;
+	text-align: center;
+	background-color: white;
+	color: dark;
+	border: none;
+}
+.navbtn {
+	width: 5vw;
+	border-radius: 10px;
+	background-color: transparent;
+	border: none; /* Remove borders */
+	color: white; /* White text */
+	font-size: 16px; /* Set a font size */
+	cursor: pointer; /* Mouse pointer on hover */
+	height: 100%;
+}
+  /* Darker background on mouse-over */
+.navbtn:hover {
+	background-color: rgba(128,128,128,0.6);
+}
+#menuBtn:hover .dropdown{
+	visibility: visible;
+}
+#menuBtn .dropdown{
+	visibility: hidden;
+	position: absolute;
+	opacity: 1;
+	top: 3vh; 
+	width: 4.3vw;
+	display: flex;
+	flex-direction: column;
+	background-color:lightblue;
+	color: black;
+	margin:0;
+	opacity: 1;
+	border-radius: 10px;
+}
+#menuBtn .dropdown a{
+	padding: 10px 0;
+	border-radius: 10px;
+	text-decoration: none;
+	color: black
+}
+#menuBtn .dropdown a:hover{
+	background-color: lightcoral;
+}
+hr{
+	margin: 0;
+}
+
 #canvas{
 	width: var(--bookw);
 	height: var(--bookh);
+	transform: scale(0.2) translateY(325%) translateX(-10%);
+	animation: intro 2s forwards;
+	margin-bottom: 1.3vh;
+}
+
+
+@keyframes intro{
+	55%{
+		transform: scale(0.2) translateY(250%) translateX(-10%);
+	}
+	100%{
+		transform: scale(1) translate(0);
+	}
+}
+
+@keyframes introbackground{
+	0%{
+		background-image: url('../pics/frontoffice.jpg');
+	}
+	70%{
+		background-image: url('../pics/frontoffice.jpg');
+	}
+	100%{
+		background-image: url('../pics/library1.jpg');
+	}
 }
 
 #book-zoom{
@@ -139,7 +229,7 @@ body, ul, table, form{
 }
 
 .sj-book .p1{
-	background-image: url('../Yrbook2024/front.jpg');
+	background-image: url('../pageimg/page1.png');
 	background-size: cover;
 	background-position: center;
 }
@@ -184,6 +274,7 @@ body, ul, table, form{
 	width:var(--depthw);
 	height:var(--depthh);
 	background-size: cover;
+	z-index: 100000;
 }
 
 .sj-book .front-side .depth{
@@ -198,25 +289,30 @@ body, ul, table, form{
 
 
 .sj-book .p2{
-	background-image: url('../Yrbook2024/page1.jpg');
+	background-image: url('../pageimg/page2.jpg');
 	background-size: cover;
 	background-position: center;
 }
 
 .sj-book .p3{
-	background-image: url('../Yrbook2024/page2.jpg');
+	background-image: url('../pageimg/page3.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.sj-book .p4{
+	background-image: url('../pageimg/page4.jpg');
 	background-size: cover;
 	background-position: center;
 }
 
 .sj-book .p31{
-	background-image: url('../Yrbook2024/page31.jpg');
+	background-image: url('../pageimg/page31.jpg');
 	background-size: cover;
 	background-position: center;
 }
 
 .sj-book .p32{
-	background-image: url('../Yrbook2024/page32.jpg');
+	background-image: url('../pageimg/page32.jpg');
 	background-size: cover;
 	background-position: center;
 }
@@ -352,7 +448,7 @@ body, ul, table, form{
 	line-height:25px;
 }
 
-.sj-book .table-contents span{
+.sj-book .table-contents a{
 	float:right;
 }
 
@@ -415,33 +511,30 @@ body, ul, table, form{
 }
 
 .book-content .liveimage1{
-	width: 24.8%;
-	height: 23.5%;
+	width: 26.4%;
+	height: 23.6%;
 	position: absolute;
-	top: 8%;
-	left: 9.4%;
+	top: 8.3%;
+	right: 6.3%;
 }
 .book-content .liveimage2{
-	width: 24.8%;
-	height: 23.5%;
+	width: 26.4%;
+	height: 23.6%;
 	position: absolute;
 	top: 37.2%;
-	right: 12%;
-	background-image: url('../Yrbook2024/binyb.gif');
+	left: 6.3%;
 	background-position: center;
 }
 .book-content .liveimage3{
-	width: 24.8%;
-	height: 23.5%;
+	width: 26.4%;
+	height: 23.6%;
 	position: absolute;
 	top: 67.8%;
-	left: 9.6%;
-	background-image: url('../Yrbook2024/chuongyb.gif');
+	right: 6.3%;
 	background-position: center;
 }
 .book-content .liveimage{
-	opacity: 0;
-	animation: opacityOn 1.7s normal;
+	opacity: 1;
 	animation-delay: 0;
 	z-index: 10000000000000000;
 	background-size: auto 100%;
@@ -459,17 +552,7 @@ body, ul, table, form{
 	opacity: 1;
 }
 
-@keyframes opacityOn {
-    30% {
-        opacity: 1;
-    }
-    85% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
+
 
 .book-content .liveimage-bottomleft{
 	width: 16%;
@@ -545,18 +628,17 @@ body, ul, table, form{
 .p1::after{
 	content: "";
 	position: absolute;
-	bottom:2%;
+	bottom:10%;
 	right:0;
 	z-index: 10000000000;
-	width: 45%;
-	height: 23%;
-	background-image: url('../pics/instructionpage.png');
+	width: 37%;
+	height: 16%;
+	background-image: url('../pics/instruction1.png');
 	background-position: center;
 	background-size: cover;
 	transform: translateX(100%);
-	animation: instruction 10s ease-in-out infinite;
-	animation-delay: 1.2s;
-	opacity: 0;
+	animation: instruction 7.5s ease-in-out infinite;
+	animation-delay: 2.3s;
 }
 
 .p1::before{
@@ -571,19 +653,19 @@ body, ul, table, form{
 	background-position: center;
 	background-size: cover;
 	transform: scaleY(-1) rotate(-15deg);
-	animation: instructionarrow 10s ease-in-out infinite;
-	animation-delay: 1.2s;
+	animation: instructionarrow 7.5s ease-in-out infinite;
+	animation-delay: 2.3s;
+	opacity: 0;
 }
 
 @keyframes instruction {
 	5%{
 		transform: translate(0);
-	}
-	65%{
 		opacity: 1;
 	}
 	69%{
 		transform: translate(0);
+		opacity: 1;
 	}
 	70%{
 		opacity: 0;
@@ -608,22 +690,46 @@ body, ul, table, form{
 	}
 }
 
-.p2::after{
+.instruction {
+	position: absolute;
+	top: 41.5%;
+	left: 8.5%;
+	z-index: 1000000000000;
+	width: 33.5%;
+	height: 23.5%;
+	border-radius: 10px;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	opacity: 0;
+	display: none;
+}
+.instruction h3{
+	font-size: 24px;
+}
+.instruction p{
+	font-size: 20px;
+}
+.instruction img{
+	width: 40px;
+}
+
+/* .p2::after{
 	content: "";
 	position: absolute;
 	top:0;
-	left:0;
-	width: 85%;
+	left: 0.5%;
+	width: 90%;
 	height: 100%;
-	background-image: url('../pics/page2instruction.jpg');
+	background-image: url('../pics/instructionpage.png');
 	background-position: left;
 	background-size: cover;
-	opacity: 0;
-	animation: page2instruction 1s forwards;
-}
-@keyframes page2instruction {
-	100%{
-		opacity: 1;
-	}
+	z-index: 1;
+} */
+
+.instruction:hover{
+	opacity: 1;
 }
 
